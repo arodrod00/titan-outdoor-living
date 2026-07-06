@@ -12,6 +12,8 @@ buzones a la medida). Basado en el perfil de Instagram @yelapergolas.
   usado en el sitio hermano AluminumLuxuryDecor (mismo nicho, mismo repo).
 - **Tipografía:** Fraunces (display) + Inter (body).
 - **Puerto de preview:** 3462 (`yela-pergolas` en `.claude/launch.json`).
+- **Repo:** https://github.com/arodrod00/yela-pergolas (público)
+- **Producción:** https://yela-pergolas.vercel.app (auto-deploy conectado al repo de GitHub, rama `master`)
 - **Paleta actual:** Azul Petróleo & Coral, blanco predominante (petróleo solo en
   hero/footer/tarjeta de WhatsApp; el resto de secciones son claras).
 - **Hero:** video de fondo (`hero.mp4`, cortesía Kling AI, 26.7MB tras optimizar —
