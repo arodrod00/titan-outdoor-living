@@ -660,7 +660,7 @@
       aspect-ratio: 16/8;
       border-radius: var(--radius-lg);
       overflow: hidden;
-      margin-bottom: 3rem;
+      margin-bottom: 1.25rem;
       background: var(--ink-2);
       touch-action: pan-y;
       --ba-pos: 50;
@@ -726,6 +726,7 @@
     }
     .ba-tag-before { left: 1rem; }
     .ba-tag-after { right: 1rem; }
+    .ba-note { font-size: var(--text-sm); color: var(--ink-500); margin: 0 0 3rem; max-width: 620px; }
     @media (max-width: 640px) { .ba-slider { aspect-ratio: 4/5; } }
 
     /* Filter pills */
@@ -1173,8 +1174,8 @@
   <section id="nosotros" class="section-pad-lg">
     <div class="container about-grid">
       <div class="about-photo-wrap">
-        <div class="photo-frame about-photo" data-label="Yela Pérgolas — equipo en obra / images/gallery-team.jpg">
-          <img src="images/gallery-team.jpg" alt="Equipo de Yela Pérgolas en un proyecto terminado" onerror="this.remove()">
+        <div class="photo-frame about-photo" data-label="Yela Pérgolas — proyecto terminado / images/hero-pergola.jpg">
+          <img src="images/hero-pergola.jpg" alt="Terraza y pérgola de aluminio terminada, con piscina y cocina exterior" onerror="this.remove()">
         </div>
         <div class="about-badge fade-in">
           <strong>10+</strong>
@@ -1254,81 +1255,82 @@
       <div class="gallery-header">
         <div>
           <p class="section-label fade-in" data-i18n="gallery.label">Proyectos Recientes</p>
-          <h2 class="section-title fade-in fd1" data-i18n="gallery.title">Antes y después</h2>
+          <h2 class="section-title fade-in fd1" data-i18n="gallery.title">Nuestro Estilo</h2>
         </div>
         <a href="https://instagram.com/yelapergolas" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color:var(--ink-200);color:var(--ink);" data-i18n="gallery.cta">Ver más en Instagram</a>
       </div>
 
       <div class="ba-slider fade-in" id="ba-slider">
         <div class="ba-frame ba-after">
-          <div class="photo-frame" data-label="DESPUÉS · images/gallery-after.jpg">
-            <img src="images/gallery-after.jpg" alt="Terraza después de la remodelación" onerror="this.remove()">
+          <div class="photo-frame" data-label="TERRAZA INSULADA · images/gallery-after.jpg">
+            <img src="images/gallery-after.jpg" alt="Terraza con techo insulado, barra y piscina" onerror="this.remove()">
           </div>
         </div>
         <div class="ba-frame ba-before" id="ba-before-frame">
-          <div class="photo-frame" data-label="ANTES · images/gallery-before.jpg">
-            <img src="images/gallery-before.jpg" alt="Terraza antes de la remodelación" onerror="this.remove()">
+          <div class="photo-frame" data-label="PÉRGOLA ABIERTA · images/gallery-before.jpg">
+            <img src="images/gallery-before.jpg" alt="Pérgola de lamas abiertas con cocina exterior" onerror="this.remove()">
           </div>
         </div>
-        <span class="ba-tag ba-tag-before" data-i18n="ba.before">Antes</span>
-        <span class="ba-tag ba-tag-after" data-i18n="ba.after">Después</span>
+        <span class="ba-tag ba-tag-before" data-i18n="ba.before">Pérgola Abierta</span>
+        <span class="ba-tag ba-tag-after" data-i18n="ba.after">Terraza Insulada</span>
         <div class="ba-handle" id="ba-handle" aria-hidden="true">
           <div class="ba-grip">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg>
           </div>
         </div>
-        <input type="range" class="ba-range" id="ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+        <input type="range" class="ba-range" id="ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar estilo de pérgola abierta vs. terraza insulada">
       </div>
+      <p class="ba-note fade-in" data-i18n="ba.note">Dos estilos, un mismo nivel de acabado: lamas abiertas para sombra y ventilación, o techo insulado para sol y lluvia todo el año.</p>
 
       <div class="gallery-filters" id="gallery-filters" role="group" aria-label="Filtrar galería por categoría">
         <button type="button" class="filter-pill active" data-filter="all" data-i18n="filter.all">Todos</button>
         <button type="button" class="filter-pill" data-filter="pergolas" data-i18n="filter.pergolas">Pérgolas</button>
         <button type="button" class="filter-pill" data-filter="terrazas" data-i18n="filter.terrazas">Terrazas Insuladas</button>
         <button type="button" class="filter-pill" data-filter="detalles" data-i18n="filter.detalles">Detalles</button>
-        <button type="button" class="filter-pill" data-filter="equipo" data-i18n="filter.equipo">Equipo</button>
+        <button type="button" class="filter-pill" data-filter="cocinas" data-i18n="filter.cocinas">Cocinas Exteriores</button>
       </div>
 
       <div class="gallery-grid" id="gallery-grid">
         <button type="button" class="gallery-link gallery-item wide" data-category="terrazas">
           <div class="photo-frame" data-label="images/gallery-lounge-night.jpg">
-            <img src="images/gallery-lounge-night.jpg" alt="Terraza insulada con iluminación de noche" onerror="this.remove()">
+            <img src="images/gallery-lounge-night.jpg" alt="Terraza insulada de aluminio frente a un canal, con cocina exterior" onerror="this.remove()">
             <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-            <span class="gallery-cap" data-i18n="g1">Terraza insulada · iluminación nocturna</span>
+            <span class="gallery-cap" data-i18n="g1">Terraza insulada frente al canal</span>
           </div>
         </button>
         <button type="button" class="gallery-link gallery-item narrow" data-category="pergolas">
           <div class="photo-frame" data-label="images/gallery-patio-white.jpg">
-            <img src="images/gallery-patio-white.jpg" alt="Pérgola blanca de aluminio" onerror="this.remove()">
+            <img src="images/gallery-patio-white.jpg" alt="Pérgola de aluminio con lamas y área de descanso junto a la piscina" onerror="this.remove()">
             <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-            <span class="gallery-cap" data-i18n="g2">Pérgola de aluminio</span>
+            <span class="gallery-cap" data-i18n="g2">Pérgola de aluminio con área de descanso</span>
           </div>
         </button>
         <button type="button" class="gallery-link gallery-item narrow" data-category="pergolas">
           <div class="photo-frame" data-label="images/gallery-playground-cover.jpg">
-            <img src="images/gallery-playground-cover.jpg" alt="Estructura de aluminio sobre área de juegos" onerror="this.remove()">
+            <img src="images/gallery-playground-cover.jpg" alt="Pérgola de aluminio con lounge exterior junto a la piscina" onerror="this.remove()">
             <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-            <span class="gallery-cap" data-i18n="g3">Cubierta para área de juegos</span>
+            <span class="gallery-cap" data-i18n="g3">Pérgola con lounge exterior</span>
           </div>
         </button>
         <button type="button" class="gallery-link gallery-item wide" data-category="terrazas">
           <div class="photo-frame" data-label="images/gallery-team.jpg">
-            <img src="images/gallery-team.jpg" alt="Equipo de Yela Pérgolas en un proyecto de terraza" onerror="this.remove()">
+            <img src="images/gallery-team.jpg" alt="Terraza insulada con iluminación de noche, TV y chimenea exterior" onerror="this.remove()">
             <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-            <span class="gallery-cap" data-i18n="g6">Nuestro equipo</span>
+            <span class="gallery-cap" data-i18n="g6">Terraza insulada · iluminación nocturna</span>
           </div>
         </button>
         <button type="button" class="gallery-link gallery-item" data-category="detalles">
           <div class="photo-frame" data-label="images/gallery-mailbox.jpg">
-            <img src="images/gallery-mailbox.jpg" alt="Buzón de aluminio a la medida" onerror="this.remove()">
+            <img src="images/gallery-mailbox.jpg" alt="Detalle de estructura de aluminio con techo angular a la medida" onerror="this.remove()">
             <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-            <span class="gallery-cap" data-i18n="g5">Buzón de aluminio a la medida</span>
+            <span class="gallery-cap" data-i18n="g5">Estructura de aluminio a la medida</span>
           </div>
         </button>
-        <button type="button" class="gallery-link gallery-item" data-category="equipo">
+        <button type="button" class="gallery-link gallery-item" data-category="cocinas">
           <div class="photo-frame" data-label="images/gallery-team-2.jpg">
-            <img src="images/gallery-team-2.jpg" alt="Equipo de Yela Pérgolas" onerror="this.remove()">
+            <img src="images/gallery-team-2.jpg" alt="Cocina exterior bajo pérgola de aluminio al atardecer" onerror="this.remove()">
             <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
-            <span class="gallery-cap" data-i18n="g6b">Nuestro equipo</span>
+            <span class="gallery-cap" data-i18n="g6b">Cocina exterior bajo pérgola</span>
           </div>
         </button>
       </div>
@@ -1574,11 +1576,12 @@
         's4.title':'Mallas y Aluminio Estructural','s4.desc':'Cerramientos y estructuras en malla de aluminio para disfrutar afuera sin insectos.',
         's5.title':'Buzones y Detalles en Aluminio','s5.desc':'Buzones y estructuras metálicas a la medida, con acabado que combina con tu fachada.','s5.badge':'A pedido',
         's6.title':'Antes y Después','s6.desc':'Mira la transformación real de patios que ya renovamos en Miami.','s6.badge':'Ver galería →',
-        'gallery.label':'Proyectos Recientes','gallery.title':'Antes y después','gallery.cta':'Ver más en Instagram',
-        'ba.before':'Antes','ba.after':'Después',
-        'filter.all':'Todos','filter.pergolas':'Pérgolas','filter.terrazas':'Terrazas Insuladas','filter.detalles':'Detalles','filter.equipo':'Equipo',
-        'g1':'Terraza insulada · iluminación nocturna','g2':'Pérgola de aluminio','g3':'Cubierta para área de juegos',
-        'g4':'Antes / Después de remodelación','g5':'Buzón de aluminio a la medida','g6':'Nuestro equipo','g6b':'Nuestro equipo',
+        'gallery.label':'Proyectos Recientes','gallery.title':'Nuestro Estilo','gallery.cta':'Ver más en Instagram',
+        'ba.before':'Pérgola Abierta','ba.after':'Terraza Insulada',
+        'ba.note':'Dos estilos, un mismo nivel de acabado: lamas abiertas para sombra y ventilación, o techo insulado para sol y lluvia todo el año.',
+        'filter.all':'Todos','filter.pergolas':'Pérgolas','filter.terrazas':'Terrazas Insuladas','filter.detalles':'Detalles','filter.cocinas':'Cocinas Exteriores',
+        'g1':'Terraza insulada frente al canal','g2':'Pérgola de aluminio con área de descanso','g3':'Pérgola con lounge exterior',
+        'g4':'Antes / Después de remodelación','g5':'Estructura de aluminio a la medida','g6':'Terraza insulada · iluminación nocturna','g6b':'Cocina exterior bajo pérgola',
         'why.label':'Por Qué Elegirnos','why.title':'Aluminio que resiste el clima de Miami',
         'why.desc':'La humedad y el sol de Florida destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.',
         'why1.title':'No se oxida','why1.desc':'El aluminio no se corroe con la humedad ni la sal del aire costero de Miami.',
@@ -1630,11 +1633,12 @@
         's4.title':'Screen Enclosures & Structures','s4.desc':'Aluminum screen enclosures so you can enjoy the outdoors, bug-free.',
         's5.title':'Mailboxes & Aluminum Details','s5.desc':'Custom metal mailboxes and structures finished to match your home.','s5.badge':'By request',
         's6.title':'Before & After','s6.desc':'See real transformations of patios we\'ve renovated across Miami.','s6.badge':'See gallery →',
-        'gallery.label':'Recent Projects','gallery.title':'Before & after','gallery.cta':'See more on Instagram',
-        'ba.before':'Before','ba.after':'After',
-        'filter.all':'All','filter.pergolas':'Pergolas','filter.terrazas':'Insulated Patios','filter.detalles':'Details','filter.equipo':'Our Team',
-        'g1':'Insulated patio · night lighting','g2':'Aluminum pergola','g3':'Playground cover structure',
-        'g4':'Remodel before / after','g5':'Custom aluminum mailbox','g6':'Our team','g6b':'Our team',
+        'gallery.label':'Recent Projects','gallery.title':'Our Style','gallery.cta':'See more on Instagram',
+        'ba.before':'Open Pergola','ba.after':'Insulated Patio',
+        'ba.note':'Two styles, the same level of craftsmanship: open louvers for shade and airflow, or an insulated roof for sun and rain, year-round.',
+        'filter.all':'All','filter.pergolas':'Pergolas','filter.terrazas':'Insulated Patios','filter.detalles':'Details','filter.cocinas':'Outdoor Kitchens',
+        'g1':'Insulated patio by the canal','g2':'Aluminum pergola with lounge area','g3':'Pergola with outdoor lounge',
+        'g4':'Remodel before / after','g5':'Custom aluminum structure','g6':'Insulated patio · night lighting','g6b':'Outdoor kitchen under a pergola',
         'why.label':'Why Choose Us','why.title':'Aluminum built for Miami weather',
         'why.desc':"Florida's humidity and sun destroy wood and rust iron. Our structures are built to last without that problem.",
         'why1.title':"Won't rust",'why1.desc':"Aluminum doesn't corrode from Miami's humidity or coastal salt air.",
