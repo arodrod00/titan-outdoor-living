@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yela Pérgolas | Pérgolas, Terrazas Insuladas y Estructuras de Aluminio — Miami</title>
+  <meta name="description" content="Construcción y remodelación de terrazas insuladas con estructuras de aluminio en Miami. Más de 10 años de experiencia. Escríbenos por WhatsApp para tu cotización gratis.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Yela Pérgolas | Pérgolas y Terrazas de Aluminio — Miami">
+  <meta property="og:description" content="Terrazas insuladas, pérgolas y remodelaciones en estructuras de aluminio. Más de 10 años sirviendo a Miami. Cotización gratis por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_US">
+  <meta property="og:locale:alternate" content="en_US">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23241A12'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='17' font-family='Georgia,serif' fill='%23E08A3E'>Y</text></svg>">
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yelapergolas.com/">
+  <!-- CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self';">
+  <!-- Google Fonts: Fraunces + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ═══════════════════════════════════════════════
+       DESIGN TOKENS
+    ═══════════════════════════════════════════════ */
+    :root {
+      --paper:      oklch(99.1% 0.002 210);
+      --paper-2:    oklch(97% 0.007 210);
+      --white:      oklch(100% 0 0);
+      --ink:        oklch(23% 0.045 205);
+      --ink-2:      oklch(29% 0.05 205);
+      --ink-3:      oklch(35% 0.045 205);
+      --ink-700:    oklch(27% 0.028 205);
+      --ink-500:    oklch(45% 0.024 205);
+      --ink-300:    oklch(80% 0.014 205);
+      --ink-200:    oklch(89% 0.009 205);
+      --ink-100:    oklch(95% 0.006 205);
+
+      --amber:      oklch(67% 0.17 35);
+      --amber-dark: oklch(57% 0.17 30);
+      --amber-deep: oklch(43% 0.14 26);
+      --amber-tint: oklch(94% 0.05 40);
+      --clay:       oklch(46% 0.09 205);
+      --green-ok:   oklch(58% 0.13 155);
+
+      --font-display: 'Fraunces', Georgia, serif;
+      --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+
+      --text-xs:    0.75rem;
+      --text-sm:    0.875rem;
+      --text-base:  1rem;
+      --text-lg:    1.125rem;
+      --text-xl:    1.25rem;
+      --text-2xl:   1.5rem;
+      --text-3xl:   1.875rem;
+      --text-4xl:   2.25rem;
+      --text-5xl:   3rem;
+
+      --radius-sm:  4px;
+      --radius:     10px;
+      --radius-lg:  18px;
+      --radius-xl:  28px;
+
+      --shadow-sm:  0 1px 3px rgba(24,16,8,0.08);
+      --shadow:     0 6px 20px rgba(24,16,8,0.12);
+      --shadow-lg:  0 16px 44px rgba(24,16,8,0.16);
+      --shadow-xl:  0 28px 72px rgba(24,16,8,0.22);
+
+      --ease:       cubic-bezier(0.16, 1, 0.3, 1);
+      --transition: 0.35s var(--ease);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      :root { --transition: 0.01s linear; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       RESET & BASE
+    ═══════════════════════════════════════════════ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; background: var(--ink); }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+    body {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      color: var(--ink-700);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    :focus-visible { outline: 3px solid var(--amber); outline-offset: 3px; }
+    h1, h2, h3, h4 { text-wrap: balance; }
+    p { text-wrap: pretty; }
+
+    /* ═══════════════════════════════════════════════
+       WHATSAPP FLOATING BUTTON
+    ═══════════════════════════════════════════════ */
+    #wa-float {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 998;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--green-ok);
+      color: white;
+      padding: 0.9rem 1.15rem;
+      border-radius: 999px;
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      transform: translateY(12px) scale(0.9);
+      pointer-events: none;
+      transition: transform var(--transition), box-shadow var(--transition), opacity var(--transition);
+    }
+    #wa-float.visible { opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; }
+    #wa-float.visible:hover { transform: translateY(-3px) scale(1.03); box-shadow: var(--shadow-xl); }
+    #wa-float svg { width: 22px; height: 22px; flex-shrink: 0; }
+    #wa-float span { font-size: var(--text-sm); font-weight: 600; white-space: nowrap; }
+    @media (max-width: 640px) {
+      #wa-float span { display: none; }
+      #wa-float { padding: 0.85rem; bottom: 1.1rem; right: 1.1rem; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       COOKIE BANNER
+    ═══════════════════════════════════════════════ */
+    #cookie-banner {
+      position: fixed;
+      bottom: 0; left: 0; right: 0;
+      background: var(--ink);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      z-index: 9999;
+      font-size: var(--text-sm);
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    #cookie-banner.hidden { display: none; }
+    #cookie-banner p { color: rgba(255,255,255,0.82); }
+    #cookie-accept {
+      background: var(--amber);
+      color: var(--ink);
+      border: none;
+      padding: 0.5rem 1.5rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      white-space: nowrap;
+      transition: background var(--transition);
+    }
+    #cookie-accept:hover { background: var(--amber-dark); color: white; }
+
+    /* ═══════════════════════════════════════════════
+       NAVIGATION
+    ═══════════════════════════════════════════════ */
+    #nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      padding: 1.5rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+    }
+    #nav.scrolled {
+      background: rgba(255,255,255,0.96);
+      box-shadow: var(--shadow-sm);
+      padding: 1rem 2rem;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: var(--text-xl);
+      font-weight: 500;
+      color: var(--white);
+      letter-spacing: 0.01em;
+      transition: color var(--transition);
+      line-height: 1.2;
+    }
+    .nav-logo span { display: block; font-size: var(--text-xs); font-family: var(--font-body); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.72; color: var(--amber); }
+    #nav.scrolled .nav-logo { color: var(--ink); }
+    .nav-right { display: flex; align-items: center; gap: 2rem; }
+    .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+    .nav-links a {
+      font-size: var(--text-sm);
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      transition: color var(--transition);
+      letter-spacing: 0.02em;
+    }
+    #nav.scrolled .nav-links a { color: var(--ink-3); }
+    .nav-links a:hover { color: var(--amber); }
+
+    /* Language toggle */
+    .lang-toggle {
+      display: flex;
+      align-items: center;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 999px;
+      padding: 3px;
+      gap: 2px;
+      transition: all var(--transition);
+    }
+    #nav.scrolled .lang-toggle { background: var(--ink-100); border-color: var(--ink-200); }
+    .lang-btn {
+      font-size: var(--text-xs);
+      font-weight: 700;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      border: none;
+      background: transparent;
+      color: rgba(255,255,255,0.65);
+      cursor: pointer;
+      font-family: var(--font-body);
+      letter-spacing: 0.06em;
+      transition: all var(--transition);
+    }
+    #nav.scrolled .lang-btn { color: var(--ink-500); }
+    .lang-btn.active { background: var(--white); color: var(--amber-deep) !important; box-shadow: 0 1px 4px rgba(0,0,0,0.12); }
+    #nav.scrolled .lang-btn.active { background: var(--amber); color: var(--ink) !important; }
+
+    /* Nav CTA */
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--amber);
+      color: var(--ink) !important;
+      padding: 0.6rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      transition: all var(--transition);
+      white-space: nowrap;
+    }
+    .nav-cta:hover { background: var(--amber-dark); color: white !important; transform: translateY(-1px); box-shadow: var(--shadow); }
+
+    /* Hamburger */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 4px;
+    }
+    .hamburger span { display: block; width: 24px; height: 2px; background: white; transition: all var(--transition); border-radius: 2px; }
+    #nav.scrolled .hamburger span { background: var(--ink); }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    /* Mobile menu */
+    #mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--white);
+      z-index: 999;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    #mobile-menu.open { display: flex; }
+    #mobile-menu a {
+      font-family: var(--font-display);
+      font-size: var(--text-4xl);
+      font-weight: 400;
+      color: var(--ink);
+      transition: color var(--transition);
+    }
+    #mobile-menu a:hover { color: var(--amber-dark); }
+    .mobile-cta {
+      margin-top: 0.5rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--amber);
+      color: var(--ink) !important;
+      padding: 0.875rem 2rem;
+      border-radius: var(--radius);
+      font-family: var(--font-body) !important;
+      font-size: var(--text-base) !important;
+      font-weight: 600;
+    }
+    .mobile-lang {
+      display: flex;
+      align-items: center;
+      background: var(--ink-100);
+      border-radius: 999px;
+      padding: 4px;
+      gap: 4px;
+      margin-top: 0.5rem;
+    }
+    .mobile-lang .lang-btn { color: var(--ink-500); }
+    .mobile-lang .lang-btn.active { background: var(--amber); color: var(--ink) !important; }
+
+    /* ═══════════════════════════════════════════════
+       HERO
+    ═══════════════════════════════════════════════ */
+    #hero {
+      position: relative;
+      min-height: 100vh;
+      min-height: 100dvh;
+      background: var(--ink);
+      overflow: hidden;
+      display: flex;
+    }
+    @media (max-height: 720px), (max-width: 400px) {
+      #hero { min-height: auto; }
+    }
+    .hero-media {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(120% 90% at 15% 0%, rgba(232,115,74,0.26), transparent 55%),
+        radial-gradient(100% 80% at 100% 100%, rgba(232,115,74,0.14), transparent 60%),
+        linear-gradient(155deg, oklch(21% 0.045 205) 0%, oklch(26% 0.05 200) 45%, oklch(17% 0.04 210) 100%);
+    }
+    .hero-media video {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s var(--ease);
+    }
+    .hero-media video.loaded { opacity: 0.8; }
+    .hero-slats {
+      position: absolute;
+      inset: 0;
+      background-image: repeating-linear-gradient(100deg, rgba(0,0,0,0) 0px, rgba(0,0,0,0) 46px, rgba(0,0,0,0.14) 46px, rgba(0,0,0,0.14) 52px);
+      mix-blend-mode: multiply;
+      opacity: 0.6;
+    }
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(12,32,38,0.5) 0%, rgba(12,32,38,0.42) 45%, rgba(12,32,38,0.82) 100%),
+        linear-gradient(90deg, rgba(12,32,38,0.55) 0%, rgba(12,32,38,0.15) 55%, rgba(12,32,38,0.05) 100%);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 100%;
+      padding: 2rem 2rem 6rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      color: var(--white);
+    }
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--amber);
+      margin-bottom: 1.75rem;
+      background: rgba(232,115,74,0.14);
+      border: 1px solid rgba(232,115,74,0.35);
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.75rem, 6.8vw, 5.5rem);
+      font-weight: 400;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      max-width: 780px;
+    }
+    .hero-title em { font-style: italic; color: var(--amber); }
+    .hero-subtitle {
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      font-weight: 400;
+      color: rgba(255,255,255,0.82);
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+      line-height: 1.7;
+    }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--amber);
+      color: var(--ink);
+      padding: 0.9rem 2.1rem;
+      border-radius: var(--radius);
+      font-size: var(--text-base);
+      font-weight: 600;
+      transition: all var(--transition);
+      border: 2px solid transparent;
+    }
+    .btn-primary:hover { background: var(--amber-dark); color: white; transform: translateY(-2px); box-shadow: 0 10px 28px rgba(232,115,74,0.35); }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: transparent;
+      color: white;
+      padding: 0.9rem 2.1rem;
+      border-radius: var(--radius);
+      font-size: var(--text-base);
+      font-weight: 600;
+      border: 2px solid rgba(255,255,255,0.4);
+      transition: all var(--transition);
+    }
+    .btn-secondary:hover { border-color: white; background: rgba(255,255,255,0.1); }
+
+    .hero-stats {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      z-index: 2;
+      display: flex;
+      border-top: 1px solid rgba(255,255,255,0.14);
+      background: rgba(12,32,38,0.4);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+    .hero-stat {
+      flex: 1;
+      padding: 1.25rem 1.5rem;
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.1);
+    }
+    .hero-stat:last-child { border-right: none; }
+    .hero-stat strong {
+      display: block;
+      font-family: var(--font-display);
+      font-size: clamp(1.25rem, 2.4vw, 1.9rem);
+      color: var(--amber);
+      font-weight: 500;
+    }
+    .hero-stat span { font-size: var(--text-xs); color: rgba(255,255,255,0.72); letter-spacing: 0.03em; }
+    @media (max-width: 720px) {
+      .hero-stats { flex-wrap: wrap; }
+      .hero-stat { flex: 1 1 50%; border-bottom: 1px solid rgba(255,255,255,0.1); padding: 1rem; }
+      .hero-content { padding-bottom: 10.5rem; }
+    }
+    @media (max-height: 720px), (max-width: 400px) {
+      .hero-content { justify-content: flex-start; padding-top: 6.5rem; padding-bottom: 17rem; }
+      .hero-eyebrow { margin-bottom: 1.1rem; }
+      .hero-title { margin-bottom: 0.9rem; }
+      .hero-subtitle { margin-bottom: 1.5rem; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       SHARED UTILITIES
+    ═══════════════════════════════════════════════ */
+    section { overflow: hidden; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+    .section-pad { padding: 6rem 0; }
+    .section-pad-lg { padding: 7.5rem 0; }
+
+    .section-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      margin-bottom: 1rem;
+    }
+    .section-label::before { content:''; display:block; width:24px; height:2px; background:var(--amber); }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 3.8vw, 3.25rem);
+      font-weight: 400;
+      line-height: 1.14;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .section-title em { font-style: italic; color: var(--amber-deep); }
+    .section-desc {
+      font-size: var(--text-lg);
+      color: var(--ink-500);
+      max-width: 580px;
+      line-height: 1.75;
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.75s var(--ease), transform 0.75s var(--ease);
+    }
+    .fade-in.visible { opacity:1; transform:translateY(0); }
+    .fd1 { transition-delay: 0.08s; }
+    .fd2 { transition-delay: 0.16s; }
+    .fd3 { transition-delay: 0.24s; }
+    .fd4 { transition-delay: 0.32s; }
+    .fd5 { transition-delay: 0.4s; }
+    .fd6 { transition-delay: 0.48s; }
+
+    /* Photo frame — real <img> when supplied, graceful placeholder otherwise */
+    .photo-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-lg);
+      background: linear-gradient(150deg, var(--ink-2), var(--amber-deep) 140%);
+    }
+    .photo-frame::before {
+      content: attr(data-label);
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.5rem;
+      color: rgba(255,255,255,0.55);
+      font-size: var(--text-xs);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      line-height: 1.6;
+    }
+    .photo-frame img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ═══════════════════════════════════════════════
+       ABOUT / TRUST
+    ═══════════════════════════════════════════════ */
+    #about { background: var(--white); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4.5rem;
+      align-items: center;
+    }
+    .about-photo { aspect-ratio: 4/5; }
+    .about-badge {
+      position: absolute;
+      bottom: -1.25rem;
+      right: -1.25rem;
+      background: var(--amber);
+      color: var(--ink);
+      border-radius: var(--radius-lg);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      z-index: 2;
+    }
+    .about-photo-wrap { position: relative; }
+    .about-badge strong { display: block; font-family: var(--font-display); font-size: var(--text-3xl); line-height: 1; }
+    .about-badge span { font-size: var(--text-xs); font-weight: 600; letter-spacing: 0.04em; }
+    .about-list { list-style: none; margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+    .about-list li { display: flex; gap: 0.85rem; align-items: flex-start; color: var(--ink-700); }
+    .about-list svg { flex-shrink: 0; width: 22px; height: 22px; color: var(--amber-deep); margin-top: 0.1rem; }
+    @media (max-width: 860px) {
+      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .about-badge { right: 1rem; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       SERVICES
+    ═══════════════════════════════════════════════ */
+    #services { background: var(--paper-2); }
+    .services-header { text-align: center; margin-bottom: 4rem; }
+    .services-header .section-label { justify-content: center; }
+    .services-header .section-label::before { display: none; }
+    .services-header .section-desc { margin: 0 auto; }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2.25rem 1.9rem;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--ink-100);
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--amber), var(--clay));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .service-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-5px); }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon {
+      width: 52px; height: 52px;
+      border-radius: var(--radius);
+      background: var(--amber-tint);
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .service-icon svg { width: 26px; height: 26px; color: var(--amber-deep); }
+    .service-card h3 { font-family: var(--font-display); font-size: var(--text-xl); font-weight: 500; color: var(--ink); margin-bottom: 0.6rem; }
+    .service-card p { color: var(--ink-500); font-size: var(--text-sm); line-height: 1.65; }
+    .service-badge {
+      display: inline-block;
+      margin-top: 0.9rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--amber-deep);
+      background: var(--amber-tint);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+    }
+
+    /* ═══════════════════════════════════════════════
+       GALLERY
+    ═══════════════════════════════════════════════ */
+    #gallery { background: var(--white); }
+    .gallery-header { display: flex; align-items: flex-end; justify-content: space-between; gap: 2rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+
+    /* Before / after slider */
+    .ba-slider {
+      position: relative;
+      aspect-ratio: 16/8;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 3rem;
+      background: var(--ink-2);
+      touch-action: pan-y;
+      --ba-pos: 50;
+    }
+    .ba-frame { position: absolute; inset: 0; }
+    .ba-frame .photo-frame { height: 100%; border-radius: 0; }
+    .ba-before { clip-path: inset(0 calc(100% - var(--ba-pos) * 1%) 0 0); will-change: clip-path; }
+    .ba-handle {
+      position: absolute;
+      top: 0; bottom: 0;
+      left: calc(var(--ba-pos) * 1%);
+      width: 0;
+      transform: translateX(-50%);
+      pointer-events: none;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .ba-handle::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      width: 3px;
+      background: var(--white);
+      box-shadow: 0 0 0 1px rgba(12,32,38,0.25);
+    }
+    .ba-grip {
+      position: relative;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      gap: 4px;
+      box-shadow: var(--shadow);
+    }
+    .ba-grip svg { width: 16px; height: 16px; color: var(--ink); }
+    .ba-range {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      opacity: 0;
+      cursor: ew-resize;
+      z-index: 5;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .ba-range:focus-visible ~ .ba-handle::before { outline: 3px solid var(--amber); outline-offset: 2px; }
+    .ba-tag {
+      position: absolute;
+      top: 1rem;
+      z-index: 3;
+      font-size: var(--text-xs);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--white);
+      background: rgba(12,32,38,0.6);
+      padding: 0.4rem 0.9rem;
+      border-radius: 999px;
+    }
+    .ba-tag-before { left: 1rem; }
+    .ba-tag-after { right: 1rem; }
+    @media (max-width: 640px) { .ba-slider { aspect-ratio: 4/5; } }
+
+    /* Filter pills */
+    .gallery-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+    .filter-pill {
+      background: var(--paper-2);
+      border: 1px solid var(--ink-200);
+      color: var(--ink-500);
+      font-size: var(--text-sm);
+      font-weight: 600;
+      padding: 0.55rem 1.1rem;
+      border-radius: 999px;
+      cursor: pointer;
+      transition: all var(--transition);
+      min-height: 40px;
+    }
+    .filter-pill:hover { border-color: var(--amber); color: var(--amber-deep); }
+    .filter-pill.active { background: var(--ink); border-color: var(--ink); color: var(--white); }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 190px;
+      gap: 1rem;
+    }
+    .gallery-item { grid-column: span 3; grid-row: span 2; }
+    .gallery-item.wide { grid-column: span 4; }
+    .gallery-item.tall { grid-row: span 3; }
+    .gallery-item.narrow { grid-column: span 2; }
+    .gallery-item {
+      transition: opacity 0.35s var(--ease), transform 0.35s var(--ease);
+    }
+    .gallery-item.filtered-out {
+      opacity: 0;
+      transform: scale(0.92);
+      pointer-events: none;
+    }
+    @media (max-width: 900px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 220px; }
+      .gallery-item, .gallery-item.wide, .gallery-item.narrow { grid-column: span 1; grid-row: span 1; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-auto-rows: 260px; }
+    }
+    .gallery-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: none;
+      background: none;
+      cursor: pointer;
+      text-align: left;
+      font: inherit;
+      color: inherit;
+    }
+    .gallery-link .photo-frame { height: 100%; }
+    .gallery-link .photo-frame::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(12,32,38,0.55) 0%, transparent 45%);
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .gallery-link:hover .photo-frame::after,
+    .gallery-link:focus-visible .photo-frame::after { opacity: 1; }
+    .gallery-cap {
+      position: absolute;
+      left: 1rem; bottom: 1rem;
+      right: 1rem;
+      z-index: 3;
+      color: white;
+      font-size: var(--text-sm);
+      font-weight: 600;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: all var(--transition);
+    }
+    .gallery-link:hover .gallery-cap,
+    .gallery-link:focus-visible .gallery-cap { opacity: 1; transform: translateY(0); }
+    .gallery-zoom-hint {
+      position: absolute;
+      top: 0.85rem; right: 0.85rem;
+      z-index: 3;
+      width: 34px; height: 34px;
+      border-radius: 50%;
+      background: rgba(12,32,38,0.55);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0;
+      transform: scale(0.85);
+      transition: all var(--transition);
+    }
+    .gallery-zoom-hint svg { width: 16px; height: 16px; color: white; }
+    .gallery-link:hover .gallery-zoom-hint,
+    .gallery-link:focus-visible .gallery-zoom-hint { opacity: 1; transform: scale(1); }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 1200;
+      background: rgba(8,20,26,0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s var(--ease);
+    }
+    .lightbox.open { opacity: 1; visibility: visible; }
+    .lightbox-content {
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .lightbox-content .photo-frame {
+      aspect-ratio: 4/3;
+      transform: scale(0.96);
+      opacity: 0;
+      transition: all 0.35s var(--ease);
+    }
+    .lightbox.open .lightbox-content .photo-frame { transform: scale(1); opacity: 1; }
+    .lightbox-caption { color: white; text-align: center; font-size: var(--text-base); }
+    .lightbox-close, .lightbox-prev, .lightbox-next {
+      position: fixed;
+      z-index: 10;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: white;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition);
+    }
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+    .lightbox-close { top: 1.5rem; right: 1.5rem; width: 46px; height: 46px; }
+    .lightbox-close svg { width: 20px; height: 20px; }
+    .lightbox-prev, .lightbox-next { top: 50%; transform: translateY(-50%); width: 52px; height: 52px; }
+    .lightbox-prev { left: 1.5rem; }
+    .lightbox-next { right: 1.5rem; }
+    .lightbox-prev svg, .lightbox-next svg { width: 22px; height: 22px; }
+    @media (max-width: 720px) {
+      .lightbox { padding: 5.5rem 1rem 2rem; }
+      .lightbox-prev, .lightbox-next { width: 44px; height: 44px; top: auto; bottom: 1rem; transform: none; }
+      .lightbox-prev { left: 1rem; }
+      .lightbox-next { right: 1rem; }
+      .lightbox-close { top: 1rem; right: 1rem; width: 40px; height: 40px; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       PROCESS / WHY US
+    ═══════════════════════════════════════════════ */
+    #why-us { background: var(--white); }
+    #why-us .section-title { color: var(--ink); }
+    #why-us .section-desc { color: var(--ink-500); }
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 3.5rem;
+    }
+    .why-item { display: flex; flex-direction: column; gap: 0.9rem; padding: 1.75rem 1.5rem; background: var(--paper-2); border-radius: var(--radius-lg); border: 1px solid var(--ink-100); }
+    .why-icon {
+      width: 46px; height: 46px;
+      border-radius: var(--radius);
+      background: var(--amber-tint);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .why-icon svg { width: 24px; height: 24px; color: var(--amber-deep); }
+    .why-item h3 { font-size: var(--text-lg); font-weight: 600; color: var(--ink); }
+    .why-item p { color: var(--ink-500); font-size: var(--text-sm); line-height: 1.65; }
+
+    /* ═══════════════════════════════════════════════
+       REVIEWS
+    ═══════════════════════════════════════════════ */
+    #reviews { background: var(--paper-2); }
+    .reviews-card {
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      padding: 3rem;
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 2.5rem;
+    }
+    .reviews-icon {
+      width: 68px; height: 68px;
+      border-radius: 50%;
+      background: var(--amber-tint);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .reviews-icon svg { width: 34px; height: 34px; color: var(--amber-deep); }
+    .reviews-card h3 { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 500; color: var(--ink); margin-bottom: 0.4rem; }
+    .reviews-card p { color: var(--ink-500); }
+    .reviews-stars { display: flex; gap: 0.2rem; margin-bottom: 0.5rem; }
+    .reviews-stars svg { width: 18px; height: 18px; color: var(--amber); }
+    @media (max-width: 720px) {
+      .reviews-card { grid-template-columns: 1fr; text-align: center; padding: 2.25rem 1.75rem; }
+      .reviews-icon { margin: 0 auto; }
+      .reviews-stars { justify-content: center; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       CONTACT / CTA
+    ═══════════════════════════════════════════════ */
+    #contact { background: var(--white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 4rem;
+    }
+    .contact-info { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+    .contact-icon {
+      width: 44px; height: 44px;
+      border-radius: var(--radius);
+      background: var(--amber-tint);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .contact-icon svg { width: 22px; height: 22px; color: var(--amber-deep); }
+    .contact-item h4 { font-size: var(--text-sm); font-weight: 700; color: var(--ink); margin-bottom: 0.15rem; }
+    .contact-item a, .contact-item p { color: var(--ink-500); font-size: var(--text-sm); }
+    .contact-item a:hover { color: var(--amber-deep); }
+
+    .whatsapp-card {
+      background: linear-gradient(155deg, var(--ink), var(--ink-2));
+      color: white;
+      border-radius: var(--radius-xl);
+      padding: 2.75rem;
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .whatsapp-card h3 { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 500; }
+    .whatsapp-card p { color: rgba(255,255,255,0.72); line-height: 1.7; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    label { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
+    input, select, textarea {
+      font-family: var(--font-body);
+      font-size: var(--text-base);
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(255,255,255,0.22);
+      background: rgba(255,255,255,0.06);
+      color: white;
+      transition: all var(--transition);
+    }
+    input::placeholder, textarea::placeholder { color: rgba(255,255,255,0.4); }
+    input:focus, select:focus, textarea:focus { border-color: var(--amber); background: rgba(255,255,255,0.1); }
+    textarea { resize: vertical; min-height: 90px; }
+    select option { color: var(--ink); }
+    .form-submit {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--green-ok);
+      color: white;
+      padding: 1rem 1.5rem;
+      border: none;
+      border-radius: var(--radius);
+      font-size: var(--text-base);
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--transition);
+      margin-top: 0.25rem;
+    }
+    .form-submit:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: var(--shadow); }
+    .form-note { font-size: var(--text-xs); color: rgba(255,255,255,0.5); text-align: center; }
+    @media (max-width: 860px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+
+    /* ═══════════════════════════════════════════════
+       FOOTER
+    ═══════════════════════════════════════════════ */
+    #footer { background: var(--ink); color: rgba(255,255,255,0.7); padding: 4.5rem 0 2rem; }
+    .footer-main {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .footer-brand { font-family: var(--font-display); font-size: var(--text-2xl); color: white; margin-bottom: 1rem; }
+    .footer-tagline { font-size: var(--text-sm); line-height: 1.7; margin-bottom: 1.25rem; max-width: 340px; }
+    .footer-phone { display: inline-block; color: var(--amber); font-weight: 600; }
+    .footer-heading { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: white; margin-bottom: 1.1rem; }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.7rem; }
+    .footer-links a { font-size: var(--text-sm); transition: color var(--transition); }
+    .footer-links a:hover { color: var(--amber); }
+    .footer-bottom { padding-top: 1.75rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: var(--text-xs); }
+    .footer-legal-links { list-style: none; display: flex; gap: 1.5rem; }
+    .footer-legal-links a:hover { color: var(--amber); }
+    @media (max-width: 760px) { .footer-main { grid-template-columns: 1fr; gap: 2.5rem; } }
+
+    /* ═══════════════════════════════════════════════
+       MODALS
+    ═══════════════════════════════════════════════ */
+    .modal-backdrop {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(12,32,38,0.6);
+      z-index: 1100;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .modal-backdrop.open { display: flex; }
+    .modal {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      max-width: 560px;
+      width: 100%;
+      max-height: 80vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      box-shadow: var(--shadow-xl);
+    }
+    .modal h2 { font-family: var(--font-display); font-size: var(--text-2xl); margin-bottom: 1rem; color: var(--ink); }
+    .modal p { margin-bottom: 1rem; color: var(--ink-500); font-size: var(--text-sm); line-height: 1.7; }
+    .modal-close {
+      margin-top: 1rem;
+      background: var(--ink);
+      color: white;
+      border: none;
+      padding: 0.7rem 1.5rem;
+      border-radius: var(--radius);
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    /* ═══════════════════════════════════════════════
+       RESPONSIVE — NAV
+    ═══════════════════════════════════════════════ */
+    @media (max-width: 900px) {
+      .nav-links, .nav-cta { display: none; }
+      .hamburger { display: flex; }
+      .nav-right .lang-toggle:not(.mobile-only) { display: none; }
+    }
+    @media (max-width: 480px) {
+      .nav-logo { font-size: var(--text-lg); }
+    }
+    @media (min-width: 901px) { .mobile-lang { display: none; } }
+
+    @media (max-width: 860px) {
+      .about-grid, .contact-grid { gap: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WHATSAPP FLOAT -->
+  <a id="wa-float" href="https://wa.me/17867902569?text=Hola%20Yela%20P%C3%A9rgolas%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.94 9.94 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-9.84-10.02-9.84zm5.87 14.2c-.25.7-1.45 1.34-2 1.42-.51.08-1.15.11-1.86-.12-.43-.13-.98-.31-1.68-.61-2.96-1.28-4.89-4.26-5.04-4.46-.15-.2-1.21-1.61-1.21-3.07s.77-2.18 1.04-2.48c.27-.3.6-.37.8-.37h.57c.18 0 .43-.03.66.5.25.6.85 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.47.13.65-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.08.13.08.75-.16 1.45z"/></svg>
+    <span data-i18n="wa.float">Escríbenos por WhatsApp</span>
+  </a>
+
+  <!-- NAVIGATION -->
+  <nav id="nav">
+    <a href="#hero" class="nav-logo">Yela <em style="font-style:normal;color:var(--amber);">Pérgolas</em><span data-i18n="nav.tag">Aluminio &amp; Diseño Exterior</span></a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
+        <li><a href="#galeria" data-i18n="nav.gallery">Galería</a></li>
+        <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-toggle" role="group" aria-label="Selector de idioma">
+        <button class="lang-btn active" id="lang-es" onclick="setLang('es')" aria-pressed="true">ES</button>
+        <button class="lang-btn" id="lang-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+      </div>
+      <a href="#contacto" class="nav-cta" data-i18n="nav.cta">Cotización Gratis</a>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <a href="#servicios" data-i18n="nav.services">Servicios</a>
+    <a href="#galeria" data-i18n="nav.gallery">Galería</a>
+    <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
+    <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+    <a href="#contacto" class="mobile-cta" data-i18n="nav.cta">Cotización Gratis</a>
+    <div class="mobile-lang">
+      <button class="lang-btn active" onclick="setLang('es');closeMobile()">ES</button>
+      <button class="lang-btn" onclick="setLang('en');closeMobile()">EN</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-media">
+      <video
+        id="hero-video"
+        src="hero.mp4"
+        poster="images/hero-poster.jpg"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+        onloadeddata="this.classList.add('loaded')"
+      ></video>
+    </div>
+    <div class="hero-slats" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Miami, FL · +10 Años de Experiencia</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">Terrazas y <em>pérgolas de aluminio</em> hechas para durar</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Construimos y remodelamos terrazas insuladas y estructuras de aluminio a la medida — sombra, estilo y calidad que no se oxida, año tras año.</p>
+      <div class="hero-ctas">
+        <a href="https://wa.me/17867902569?text=Hola%20Yela%20P%C3%A9rgolas%2C%20quiero%20una%20cotizaci%C3%B3n%20gratis" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="hero.cta1">Cotización por WhatsApp</a>
+        <a href="#galeria" class="btn-secondary" data-i18n="hero.cta2">Ver Proyectos</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>10+</strong><span data-i18n="hero.s1">Años de experiencia</span></div>
+      <div class="hero-stat"><strong>100%</strong><span data-i18n="hero.s2">Estructuras de aluminio</span></div>
+      <div class="hero-stat"><strong data-i18n="hero.s3v">Miami-Dade</strong><span data-i18n="hero.s3">Área de servicio</span></div>
+      <div class="hero-stat"><strong data-i18n="hero.s4v">24h</strong><span data-i18n="hero.s4">Respuesta por WhatsApp</span></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="nosotros" class="section-pad-lg">
+    <div class="container about-grid">
+      <div class="about-photo-wrap">
+        <div class="photo-frame about-photo" data-label="Yela Pérgolas — equipo en obra / images/gallery-team.jpg">
+          <img src="images/gallery-team.jpg" alt="Equipo de Yela Pérgolas en un proyecto terminado" onerror="this.remove()">
+        </div>
+        <div class="about-badge fade-in">
+          <strong>10+</strong>
+          <span data-i18n="about.badge">Años</span>
+        </div>
+      </div>
+      <div>
+        <p class="section-label fade-in" data-i18n="about.label">Quiénes Somos</p>
+        <h2 class="section-title fade-in fd1" data-i18n="about.title">Una empresa familiar dedicada al aluminio de lujo</h2>
+        <p class="section-desc fade-in fd2" data-i18n="about.desc">En Yela Pérgolas construimos y remodelamos terrazas insuladas con estructuras 100% de aluminio. Más de 10 años ayudando a familias de Miami a convertir su patio en el espacio favorito de la casa.</p>
+        <ul class="about-list fade-in fd3">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-i18n="about.li1">Aluminio de calidad — no se oxida ni se pudre con el clima de Florida.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-i18n="about.li2">Diseño a la medida: terrazas insuladas, pérgolas y remodelaciones completas.</span>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span data-i18n="about.li3">Comunicación directa por WhatsApp, del primer mensaje a la entrega final.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="servicios" class="section-pad">
+    <div class="container">
+      <div class="services-header">
+        <p class="section-label fade-in" data-i18n="services.label">Nuestros Servicios</p>
+        <h2 class="section-title fade-in fd1" data-i18n="services.title">Estructuras de aluminio para cada patio</h2>
+        <p class="section-desc fade-in fd2" data-i18n="services.desc">Desde una pérgola sencilla hasta la remodelación completa de tu terraza — todo en aluminio, todo a la medida.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card fade-in fd1">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9 12 3l9 6"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg></div>
+          <h3 data-i18n="s1.title">Terrazas Insuladas</h3>
+          <p data-i18n="s1.desc">Techos aislados que bloquean el calor y la lluvia, para disfrutar tu patio los 365 días del año.</p>
+        </div>
+        <div class="service-card fade-in fd2">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h16M4 12h16M4 16h16"/><path d="M4 8v10M20 8v10"/></svg></div>
+          <h3 data-i18n="s2.title">Pérgolas de Aluminio</h3>
+          <p data-i18n="s2.desc">Estructuras abiertas o de lamas ajustables que le dan sombra y carácter a cualquier exterior.</p>
+        </div>
+        <div class="service-card fade-in fd3">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3 data-i18n="s3.title">Remodelación de Terrazas</h3>
+          <p data-i18n="s3.desc">Renovamos terrazas existentes: nueva techumbre, iluminación y acabados de lujo.</p>
+        </div>
+        <div class="service-card fade-in fd4">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9.3h18M3 14.7h18M8.3 4v16M15.7 4v16"/></svg></div>
+          <h3 data-i18n="s4.title">Mallas y Aluminio Estructural</h3>
+          <p data-i18n="s4.desc">Cerramientos y estructuras en malla de aluminio para disfrutar afuera sin insectos.</p>
+        </div>
+        <div class="service-card fade-in fd5">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12a5 5 0 0 1 5-5h6v10H9a5 5 0 0 1-5-5z"/><path d="M15 9h2a2.5 2.5 0 0 1 0 5h-2"/><path d="M4 20V4"/></svg></div>
+          <h3 data-i18n="s5.title">Buzones y Detalles en Aluminio</h3>
+          <p data-i18n="s5.desc">Buzones y estructuras metálicas a la medida, con acabado que combina con tu fachada.</p>
+          <span class="service-badge" data-i18n="s5.badge">A pedido</span>
+        </div>
+        <div class="service-card fade-in fd6">
+          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+          <h3 data-i18n="s6.title">Antes y Después</h3>
+          <p data-i18n="s6.desc">Mira la transformación real de patios que ya renovamos en Miami.</p>
+          <a href="#galeria" class="service-badge" data-i18n="s6.badge" style="cursor:pointer;">Ver galería →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="galeria" class="section-pad">
+    <div class="container">
+      <div class="gallery-header">
+        <div>
+          <p class="section-label fade-in" data-i18n="gallery.label">Proyectos Recientes</p>
+          <h2 class="section-title fade-in fd1" data-i18n="gallery.title">Antes y después</h2>
+        </div>
+        <a href="https://instagram.com/yelapergolas" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color:var(--ink-200);color:var(--ink);" data-i18n="gallery.cta">Ver más en Instagram</a>
+      </div>
+
+      <div class="ba-slider fade-in" id="ba-slider">
+        <div class="ba-frame ba-after">
+          <div class="photo-frame" data-label="DESPUÉS · images/gallery-after.jpg">
+            <img src="images/gallery-after.jpg" alt="Terraza después de la remodelación" onerror="this.remove()">
+          </div>
+        </div>
+        <div class="ba-frame ba-before" id="ba-before-frame">
+          <div class="photo-frame" data-label="ANTES · images/gallery-before.jpg">
+            <img src="images/gallery-before.jpg" alt="Terraza antes de la remodelación" onerror="this.remove()">
+          </div>
+        </div>
+        <span class="ba-tag ba-tag-before" data-i18n="ba.before">Antes</span>
+        <span class="ba-tag ba-tag-after" data-i18n="ba.after">Después</span>
+        <div class="ba-handle" id="ba-handle" aria-hidden="true">
+          <div class="ba-grip">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg>
+          </div>
+        </div>
+        <input type="range" class="ba-range" id="ba-range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+      </div>
+
+      <div class="gallery-filters" id="gallery-filters" role="group" aria-label="Filtrar galería por categoría">
+        <button type="button" class="filter-pill active" data-filter="all" data-i18n="filter.all">Todos</button>
+        <button type="button" class="filter-pill" data-filter="pergolas" data-i18n="filter.pergolas">Pérgolas</button>
+        <button type="button" class="filter-pill" data-filter="terrazas" data-i18n="filter.terrazas">Terrazas Insuladas</button>
+        <button type="button" class="filter-pill" data-filter="detalles" data-i18n="filter.detalles">Detalles</button>
+        <button type="button" class="filter-pill" data-filter="equipo" data-i18n="filter.equipo">Equipo</button>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <button type="button" class="gallery-link gallery-item wide" data-category="terrazas">
+          <div class="photo-frame" data-label="images/gallery-lounge-night.jpg">
+            <img src="images/gallery-lounge-night.jpg" alt="Terraza insulada con iluminación de noche" onerror="this.remove()">
+            <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <span class="gallery-cap" data-i18n="g1">Terraza insulada · iluminación nocturna</span>
+          </div>
+        </button>
+        <button type="button" class="gallery-link gallery-item narrow" data-category="pergolas">
+          <div class="photo-frame" data-label="images/gallery-patio-white.jpg">
+            <img src="images/gallery-patio-white.jpg" alt="Pérgola blanca de aluminio" onerror="this.remove()">
+            <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <span class="gallery-cap" data-i18n="g2">Pérgola de aluminio</span>
+          </div>
+        </button>
+        <button type="button" class="gallery-link gallery-item narrow" data-category="pergolas">
+          <div class="photo-frame" data-label="images/gallery-playground-cover.jpg">
+            <img src="images/gallery-playground-cover.jpg" alt="Estructura de aluminio sobre área de juegos" onerror="this.remove()">
+            <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <span class="gallery-cap" data-i18n="g3">Cubierta para área de juegos</span>
+          </div>
+        </button>
+        <button type="button" class="gallery-link gallery-item wide" data-category="terrazas">
+          <div class="photo-frame" data-label="images/gallery-team.jpg">
+            <img src="images/gallery-team.jpg" alt="Equipo de Yela Pérgolas en un proyecto de terraza" onerror="this.remove()">
+            <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <span class="gallery-cap" data-i18n="g6">Nuestro equipo</span>
+          </div>
+        </button>
+        <button type="button" class="gallery-link gallery-item" data-category="detalles">
+          <div class="photo-frame" data-label="images/gallery-mailbox.jpg">
+            <img src="images/gallery-mailbox.jpg" alt="Buzón de aluminio a la medida" onerror="this.remove()">
+            <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <span class="gallery-cap" data-i18n="g5">Buzón de aluminio a la medida</span>
+          </div>
+        </button>
+        <button type="button" class="gallery-link gallery-item" data-category="equipo">
+          <div class="photo-frame" data-label="images/gallery-team-2.jpg">
+            <img src="images/gallery-team-2.jpg" alt="Equipo de Yela Pérgolas" onerror="this.remove()">
+            <span class="gallery-zoom-hint" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg></span>
+            <span class="gallery-cap" data-i18n="g6b">Nuestro equipo</span>
+          </div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" aria-hidden="true">
+    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Cerrar">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <button type="button" class="lightbox-prev" id="lightbox-prev" aria-label="Foto anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <div class="photo-frame" id="lightbox-photo"></div>
+      <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+    <button type="button" class="lightbox-next" id="lightbox-next" aria-label="Foto siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <!-- WHY US -->
+  <section id="why-us" class="section-pad-lg">
+    <div class="container">
+      <p class="section-label fade-in" data-i18n="why.label">Por Qué Elegirnos</p>
+      <h2 class="section-title fade-in fd1" data-i18n="why.title">Aluminio que resiste el clima de Miami</h2>
+      <p class="section-desc fade-in fd2" data-i18n="why.desc">La humedad y el sol de Florida destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.</p>
+      <div class="why-grid">
+        <div class="why-item fade-in fd1">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5 5 0 0 0-5 5c0 3 2 4 2 7a3 3 0 0 0 6 0c0-3 2-4 2-7a5 5 0 0 0-5-5z"/><path d="M9 21h6"/></svg></span>
+          <h3 data-i18n="why1.title">No se oxida</h3>
+          <p data-i18n="why1.desc">El aluminio no se corroe con la humedad ni la sal del aire costero de Miami.</p>
+        </div>
+        <div class="why-item fade-in fd2">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20v-8m0 0 6.5-4.2a2 2 0 0 0 .9-1.7V3M12 12 5.5 7.8a2 2 0 0 1-.9-1.7V3M4 21h16"/></svg></span>
+          <h3 data-i18n="why2.title">Diseño a la medida</h3>
+          <p data-i18n="why2.desc">Cada terraza y pérgola se diseña según el espacio, el estilo de tu casa y tu presupuesto.</p>
+        </div>
+        <div class="why-item fade-in fd3">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38A9.94 9.94 0 0 0 12.05 22c5.52 0 10-4.48 10-10s-4.48-10-10.01-10z"/></svg></span>
+          <h3 data-i18n="why3.title">Trato directo</h3>
+          <p data-i18n="why3.desc">Hablas directo con el equipo por WhatsApp — sin intermediarios, sin sorpresas.</p>
+        </div>
+        <div class="why-item fade-in fd4">
+          <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+          <h3 data-i18n="why4.title">+10 años de experiencia</h3>
+          <p data-i18n="why4.desc">Más de una década construyendo y remodelando terrazas en el sur de la Florida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews" class="section-pad">
+    <div class="container">
+      <div class="reviews-card fade-in">
+        <div class="reviews-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        </div>
+        <div>
+          <div class="reviews-stars" aria-hidden="true">
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+            <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3L10 14.9 4.4 18.1l1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          </div>
+          <h3 data-i18n="reviews.title">Mira las opiniones de nuestros clientes</h3>
+          <p data-i18n="reviews.desc">Seguimos publicando reseñas reales de clientes en nuestro Instagram, en el destacado "Opiniones".</p>
+        </div>
+        <a href="https://instagram.com/yelapergolas" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="reviews.cta">Ver Opiniones</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contacto" class="section-pad-lg">
+    <div class="container">
+      <div class="contact-grid">
+        <div>
+          <p class="section-label fade-in" data-i18n="contact.label">Hablemos</p>
+          <h2 class="section-title fade-in fd1" data-i18n="contact.title">Pide tu cotización gratis</h2>
+          <p class="section-desc fade-in fd2" data-i18n="contact.desc">Cuéntanos sobre tu proyecto por WhatsApp y coordinamos una visita gratis a tu casa.</p>
+          <div class="contact-info fade-in fd3">
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2-2h2.5l1.5 5-2 1.5a11 11 0 0 0 5 5l1.5-2 5 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5z"/></svg></div>
+              <div>
+                <h4 data-i18n="ci1.label">WhatsApp / Teléfono</h4>
+                <a href="https://wa.me/17867902569" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 786-790-2569">(786) 790-2569</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
+              <div>
+                <h4 data-i18n="ci2.label">Área de Servicio</h4>
+                <p data-i18n="ci2.val">Miami y alrededores del sur de la Florida</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></div>
+              <div>
+                <h4 data-i18n="ci3.label">Horario</h4>
+                <p data-i18n="ci3.val">Lunes – Sábado: 8:00 AM – 6:00 PM</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-4.6M8.2 13.2l7.6 4.6"/></svg></div>
+              <div>
+                <h4 data-i18n="ci4.label">Síguenos</h4>
+                <p><a href="https://instagram.com/yelapergolas" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en pestaña nueva)">Instagram @yelapergolas</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="whatsapp-card fade-in fd2">
+          <h3 data-i18n="form.heading">Cuéntanos de tu proyecto</h3>
+          <p data-i18n="form.subheading">Completa estos datos y te abrimos WhatsApp con tu mensaje ya escrito, listo para enviar.</p>
+          <form id="contact-form" novalidate aria-label="Formulario de cotización por WhatsApp">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name" data-i18n="form.name">Nombre *</label>
+                <input type="text" id="name" name="name" required autocomplete="name" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label for="phone" data-i18n="form.phone">Teléfono *</label>
+                <input type="tel" id="phone" name="phone" required autocomplete="tel" placeholder="(305) 000-0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="service" data-i18n="form.service">Servicio de interés *</label>
+              <select id="service" name="service" required>
+                <option value="" data-i18n="form.svc0">Selecciona un servicio...</option>
+                <option value="terraza insulada" data-i18n="form.svc1">Terraza Insulada</option>
+                <option value="pérgola" data-i18n="form.svc2">Pérgola de Aluminio</option>
+                <option value="remodelación" data-i18n="form.svc3">Remodelación de Terraza</option>
+                <option value="malla / enclosure" data-i18n="form.svc4">Malla / Enclosure</option>
+                <option value="otro" data-i18n="form.svc5">Otro / No estoy seguro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" data-i18n="form.msg">Cuéntanos sobre tu espacio</label>
+              <textarea id="message" name="message" placeholder="Tamaño del patio, ideas, presupuesto aproximado..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" aria-label="Enviar por WhatsApp">
+              <span data-i18n="form.submit">Enviar por WhatsApp</span> →
+            </button>
+            <p class="form-note" data-i18n="form.note">Se abre WhatsApp con tu mensaje listo — tú decides si enviarlo.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <p class="footer-brand">Yela Pérgolas</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Construcción y remodelación de terrazas insuladas con estructuras de aluminio en Miami. Más de 10 años de experiencia.</p>
+          <a href="https://wa.me/17867902569" target="_blank" rel="noopener noreferrer" class="footer-phone">(786) 790-2569</a>
+        </div>
+        <div>
+          <p class="footer-heading" data-i18n="footer.h1">Servicios</p>
+          <ul class="footer-links" role="list">
+            <li><a href="#servicios" data-i18n="footer.s1">Terrazas Insuladas</a></li>
+            <li><a href="#servicios" data-i18n="footer.s2">Pérgolas de Aluminio</a></li>
+            <li><a href="#servicios" data-i18n="footer.s3">Remodelaciones</a></li>
+            <li><a href="#servicios" data-i18n="footer.s4">Mallas / Enclosures</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-heading" data-i18n="footer.h2">Empresa</p>
+          <ul class="footer-links" role="list">
+            <li><a href="#nosotros" data-i18n="footer.about">Nosotros</a></li>
+            <li><a href="#galeria" data-i18n="footer.gallery">Galería</a></li>
+            <li><a href="#contacto" data-i18n="footer.contact">Contacto</a></li>
+            <li><a href="https://instagram.com/yelapergolas" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Yela Pérgolas. <span data-i18n="footer.rights">Todos los derechos reservados.</span> | Miami, FL</p>
+        <ul class="footer-legal-links" role="list">
+          <li><a href="#" id="privacy-link" data-i18n="footer.privacy">Política de Privacidad</a></li>
+          <li><a href="#" id="terms-link" data-i18n="footer.terms">Términos de Servicio</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PRIVACY MODAL -->
+  <div class="modal-backdrop" id="privacy-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
+      <h2 id="privacy-title" data-i18n="privacy.title">Política de Privacidad</h2>
+      <p data-i18n="privacy.p1">Yela Pérgolas respeta tu privacidad. Los datos que nos compartas por este formulario o por WhatsApp se usan únicamente para responder tu solicitud de cotización.</p>
+      <p data-i18n="privacy.p2">No vendemos ni compartimos tu información con terceros. Puedes pedirnos eliminar tus datos en cualquier momento escribiéndonos por WhatsApp.</p>
+      <button class="modal-close" onclick="closeModal('privacy-modal')" data-i18n="modal.close">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- TERMS MODAL -->
+  <div class="modal-backdrop" id="terms-modal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
+      <h2 id="terms-title" data-i18n="terms.title">Términos de Servicio</h2>
+      <p data-i18n="terms.p1">Las cotizaciones ofrecidas por Yela Pérgolas son estimados iniciales sujetos a una visita presencial y medición del espacio.</p>
+      <p data-i18n="terms.p2">Los tiempos de instalación pueden variar según el alcance del proyecto y la disponibilidad de materiales.</p>
+      <button class="modal-close" onclick="closeModal('terms-modal')" data-i18n="modal.close">Cerrar</button>
+    </div>
+  </div>
+
+  <!-- COOKIE BANNER -->
+  <div id="cookie-banner">
+    <p data-i18n="cookie.text">Usamos cookies básicas para mejorar tu experiencia en este sitio.</p>
+    <button id="cookie-accept" data-i18n="cookie.accept">Aceptar</button>
+  </div>
+
+  <script>
+    // ── i18n dictionary ─────────────────────────────
+    const i18n = {
+      es: {
+        'wa.float':'Escríbenos por WhatsApp',
+        'nav.tag':'Aluminio & Diseño Exterior',
+        'nav.services':'Servicios','nav.gallery':'Galería','nav.about':'Nosotros','nav.contact':'Contacto','nav.cta':'Cotización Gratis',
+        'hero.eyebrow':'Miami, FL · +10 Años de Experiencia',
+        'hero.title':'Terrazas y <em>pérgolas de aluminio</em> hechas para durar',
+        'hero.subtitle':'Construimos y remodelamos terrazas insuladas y estructuras de aluminio a la medida — sombra, estilo y calidad que no se oxida, año tras año.',
+        'hero.cta1':'Cotización por WhatsApp','hero.cta2':'Ver Proyectos',
+        'hero.s1':'Años de experiencia','hero.s2':'Estructuras de aluminio','hero.s3':'Área de servicio','hero.s3v':'Miami-Dade','hero.s4':'Respuesta por WhatsApp','hero.s4v':'24h',
+        'about.label':'Quiénes Somos','about.title':'Una empresa familiar dedicada al aluminio de lujo',
+        'about.desc':'En Yela Pérgolas construimos y remodelamos terrazas insuladas con estructuras 100% de aluminio. Más de 10 años ayudando a familias de Miami a convertir su patio en el espacio favorito de la casa.',
+        'about.li1':'Aluminio de calidad — no se oxida ni se pudre con el clima de Florida.',
+        'about.li2':'Diseño a la medida: terrazas insuladas, pérgolas y remodelaciones completas.',
+        'about.li3':'Comunicación directa por WhatsApp, del primer mensaje a la entrega final.',
+        'about.badge':'Años',
+        'services.label':'Nuestros Servicios','services.title':'Estructuras de aluminio para cada patio',
+        'services.desc':'Desde una pérgola sencilla hasta la remodelación completa de tu terraza — todo en aluminio, todo a la medida.',
+        's1.title':'Terrazas Insuladas','s1.desc':'Techos aislados que bloquean el calor y la lluvia, para disfrutar tu patio los 365 días del año.',
+        's2.title':'Pérgolas de Aluminio','s2.desc':'Estructuras abiertas o de lamas ajustables que le dan sombra y carácter a cualquier exterior.',
+        's3.title':'Remodelación de Terrazas','s3.desc':'Renovamos terrazas existentes: nueva techumbre, iluminación y acabados de lujo.',
+        's4.title':'Mallas y Aluminio Estructural','s4.desc':'Cerramientos y estructuras en malla de aluminio para disfrutar afuera sin insectos.',
+        's5.title':'Buzones y Detalles en Aluminio','s5.desc':'Buzones y estructuras metálicas a la medida, con acabado que combina con tu fachada.','s5.badge':'A pedido',
+        's6.title':'Antes y Después','s6.desc':'Mira la transformación real de patios que ya renovamos en Miami.','s6.badge':'Ver galería →',
+        'gallery.label':'Proyectos Recientes','gallery.title':'Antes y después','gallery.cta':'Ver más en Instagram',
+        'ba.before':'Antes','ba.after':'Después',
+        'filter.all':'Todos','filter.pergolas':'Pérgolas','filter.terrazas':'Terrazas Insuladas','filter.detalles':'Detalles','filter.equipo':'Equipo',
+        'g1':'Terraza insulada · iluminación nocturna','g2':'Pérgola de aluminio','g3':'Cubierta para área de juegos',
+        'g4':'Antes / Después de remodelación','g5':'Buzón de aluminio a la medida','g6':'Nuestro equipo','g6b':'Nuestro equipo',
+        'why.label':'Por Qué Elegirnos','why.title':'Aluminio que resiste el clima de Miami',
+        'why.desc':'La humedad y el sol de Florida destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.',
+        'why1.title':'No se oxida','why1.desc':'El aluminio no se corroe con la humedad ni la sal del aire costero de Miami.',
+        'why2.title':'Diseño a la medida','why2.desc':'Cada terraza y pérgola se diseña según el espacio, el estilo de tu casa y tu presupuesto.',
+        'why3.title':'Trato directo','why3.desc':'Hablas directo con el equipo por WhatsApp — sin intermediarios, sin sorpresas.',
+        'why4.title':'+10 años de experiencia','why4.desc':'Más de una década construyendo y remodelando terrazas en el sur de la Florida.',
+        'reviews.title':'Mira las opiniones de nuestros clientes','reviews.desc':'Seguimos publicando reseñas reales de clientes en nuestro Instagram, en el destacado "Opiniones".','reviews.cta':'Ver Opiniones',
+        'contact.label':'Hablemos','contact.title':'Pide tu cotización gratis','contact.desc':'Cuéntanos sobre tu proyecto por WhatsApp y coordinamos una visita gratis a tu casa.',
+        'ci1.label':'WhatsApp / Teléfono','ci2.label':'Área de Servicio','ci2.val':'Miami y alrededores del sur de la Florida',
+        'ci3.label':'Horario','ci3.val':'Lunes – Sábado: 8:00 AM – 6:00 PM','ci4.label':'Síguenos',
+        'form.heading':'Cuéntanos de tu proyecto','form.subheading':'Completa estos datos y te abrimos WhatsApp con tu mensaje ya escrito, listo para enviar.',
+        'form.name':'Nombre *','form.phone':'Teléfono *','form.service':'Servicio de interés *',
+        'form.svc0':'Selecciona un servicio...','form.svc1':'Terraza Insulada','form.svc2':'Pérgola de Aluminio','form.svc3':'Remodelación de Terraza','form.svc4':'Malla / Enclosure','form.svc5':'Otro / No estoy seguro',
+        'form.msg':'Cuéntanos sobre tu espacio','form.submit':'Enviar por WhatsApp','form.note':'Se abre WhatsApp con tu mensaje listo — tú decides si enviarlo.',
+        'form.err':'Por favor completa nombre, teléfono y servicio.',
+        'footer.tagline':'Construcción y remodelación de terrazas insuladas con estructuras de aluminio en Miami. Más de 10 años de experiencia.',
+        'footer.h1':'Servicios','footer.s1':'Terrazas Insuladas','footer.s2':'Pérgolas de Aluminio','footer.s3':'Remodelaciones','footer.s4':'Mallas / Enclosures',
+        'footer.h2':'Empresa','footer.about':'Nosotros','footer.gallery':'Galería','footer.contact':'Contacto','footer.rights':'Todos los derechos reservados.',
+        'footer.privacy':'Política de Privacidad','footer.terms':'Términos de Servicio',
+        'privacy.title':'Política de Privacidad',
+        'privacy.p1':'Yela Pérgolas respeta tu privacidad. Los datos que nos compartas por este formulario o por WhatsApp se usan únicamente para responder tu solicitud de cotización.',
+        'privacy.p2':'No vendemos ni compartimos tu información con terceros. Puedes pedirnos eliminar tus datos en cualquier momento escribiéndonos por WhatsApp.',
+        'terms.title':'Términos de Servicio',
+        'terms.p1':'Las cotizaciones ofrecidas por Yela Pérgolas son estimados iniciales sujetos a una visita presencial y medición del espacio.',
+        'terms.p2':'Los tiempos de instalación pueden variar según el alcance del proyecto y la disponibilidad de materiales.',
+        'modal.close':'Cerrar',
+        'cookie.text':'Usamos cookies básicas para mejorar tu experiencia en este sitio.','cookie.accept':'Aceptar'
+      },
+      en: {
+        'wa.float':'Message us on WhatsApp',
+        'nav.tag':'Aluminum & Outdoor Design',
+        'nav.services':'Services','nav.gallery':'Gallery','nav.about':'About','nav.contact':'Contact','nav.cta':'Free Quote',
+        'hero.eyebrow':'Miami, FL · 10+ Years of Experience',
+        'hero.title':'Aluminum patios and <em>pergolas</em> built to last',
+        'hero.subtitle':'We build and remodel insulated patios and custom aluminum structures — shade, style, and quality that never rusts, year after year.',
+        'hero.cta1':'Quote via WhatsApp','hero.cta2':'See Our Work',
+        'hero.s1':'Years of experience','hero.s2':'Aluminum structures','hero.s3':'Service area','hero.s3v':'Miami-Dade','hero.s4':'WhatsApp response','hero.s4v':'24h',
+        'about.label':'Who We Are','about.title':'A family business dedicated to luxury aluminum',
+        'about.desc':"At Yela Pérgolas we build and remodel insulated patios with 100% aluminum structures. Over 10 years helping Miami families turn their patio into their favorite room in the house.",
+        'about.li1':"Quality aluminum — it won't rust or rot in Florida's climate.",
+        'about.li2':'Custom design: insulated patios, pergolas, and full remodels.',
+        'about.li3':'Direct WhatsApp communication, from the first message to final delivery.',
+        'about.badge':'Years',
+        'services.label':'Our Services','services.title':'Aluminum structures for every patio',
+        'services.desc':'From a simple pergola to a full patio remodel — all in aluminum, all built to your space.',
+        's1.title':'Insulated Patios','s1.desc':'Insulated roofing that blocks heat and rain, so you can enjoy your patio 365 days a year.',
+        's2.title':'Aluminum Pergolas','s2.desc':'Open or adjustable-louver structures that bring shade and character to any outdoor space.',
+        's3.title':'Patio Remodels','s3.desc':'We renovate existing patios: new roofing, lighting, and luxury finishes.',
+        's4.title':'Screen Enclosures & Structures','s4.desc':'Aluminum screen enclosures so you can enjoy the outdoors, bug-free.',
+        's5.title':'Mailboxes & Aluminum Details','s5.desc':'Custom metal mailboxes and structures finished to match your home.','s5.badge':'By request',
+        's6.title':'Before & After','s6.desc':'See real transformations of patios we\'ve renovated across Miami.','s6.badge':'See gallery →',
+        'gallery.label':'Recent Projects','gallery.title':'Before & after','gallery.cta':'See more on Instagram',
+        'ba.before':'Before','ba.after':'After',
+        'filter.all':'All','filter.pergolas':'Pergolas','filter.terrazas':'Insulated Patios','filter.detalles':'Details','filter.equipo':'Our Team',
+        'g1':'Insulated patio · night lighting','g2':'Aluminum pergola','g3':'Playground cover structure',
+        'g4':'Remodel before / after','g5':'Custom aluminum mailbox','g6':'Our team','g6b':'Our team',
+        'why.label':'Why Choose Us','why.title':'Aluminum built for Miami weather',
+        'why.desc':"Florida's humidity and sun destroy wood and rust iron. Our structures are built to last without that problem.",
+        'why1.title':"Won't rust",'why1.desc':"Aluminum doesn't corrode from Miami's humidity or coastal salt air.",
+        'why2.title':'Custom design','why2.desc':'Every patio and pergola is designed around your space, your home style, and your budget.',
+        'why3.title':'Direct communication','why3.desc':'You talk straight to the team over WhatsApp — no middlemen, no surprises.',
+        'why4.title':'10+ years of experience','why4.desc':'Over a decade building and remodeling patios across South Florida.',
+        'reviews.title':'See what our clients are saying','reviews.desc':'We keep posting real client reviews on our Instagram, under the "Opiniones" highlight.','reviews.cta':'See Reviews',
+        'contact.label':"Let's Talk",'contact.title':'Get your free quote','contact.desc':"Tell us about your project on WhatsApp and we'll schedule a free visit to your home.",
+        'ci1.label':'WhatsApp / Phone','ci2.label':'Service Area','ci2.val':'Miami and the greater South Florida area',
+        'ci3.label':'Hours','ci3.val':'Mon – Sat: 8:00 AM – 6:00 PM','ci4.label':'Follow Us',
+        'form.heading':'Tell us about your project','form.subheading':"Fill this in and we'll open WhatsApp with your message already written, ready to send.",
+        'form.name':'Full Name *','form.phone':'Phone *','form.service':'Service Interested In *',
+        'form.svc0':'Select a service...','form.svc1':'Insulated Patio','form.svc2':'Aluminum Pergola','form.svc3':'Patio Remodel','form.svc4':'Screen Enclosure','form.svc5':'Other / Not Sure',
+        'form.msg':'Tell us about your space','form.submit':'Send via WhatsApp','form.note':"This opens WhatsApp with your message ready — you decide whether to send it.",
+        'form.err':'Please fill in your name, phone, and service.',
+        'footer.tagline':'Building and remodeling insulated patios with aluminum structures in Miami. Over 10 years of experience.',
+        'footer.h1':'Services','footer.s1':'Insulated Patios','footer.s2':'Aluminum Pergolas','footer.s3':'Remodels','footer.s4':'Screen Enclosures',
+        'footer.h2':'Company','footer.about':'About','footer.gallery':'Gallery','footer.contact':'Contact','footer.rights':'All rights reserved.',
+        'footer.privacy':'Privacy Policy','footer.terms':'Terms of Service',
+        'privacy.title':'Privacy Policy',
+        'privacy.p1':'Yela Pérgolas respects your privacy. Information shared through this form or WhatsApp is used only to respond to your quote request.',
+        'privacy.p2':'We never sell or share your information with third parties. You can ask us to delete your data at any time via WhatsApp.',
+        'terms.title':'Terms of Service',
+        'terms.p1':'Quotes provided by Yela Pérgolas are initial estimates subject to an in-person visit and measurement of the space.',
+        'terms.p2':'Installation timelines may vary depending on project scope and material availability.',
+        'modal.close':'Close',
+        'cookie.text':'We use basic cookies to improve your experience on this site.','cookie.accept':'Accept'
+      }
+    };
+
+    let lang = 'es';
+    function setLang(l) {
+      lang = l;
+      document.documentElement.lang = l;
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[l][key] !== undefined) el.textContent = i18n[l][key];
+      });
+      document.querySelectorAll('[data-i18n-html]').forEach(el => {
+        const key = el.getAttribute('data-i18n-html');
+        if (i18n[l][key] !== undefined) el.innerHTML = i18n[l][key];
+      });
+      document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll(`#lang-${l}, .mobile-lang .lang-btn:nth-child(${l === 'es' ? 1 : 2})`).forEach(btn => btn.classList.add('active'));
+      document.querySelectorAll('.lang-toggle .lang-btn').forEach(btn => btn.setAttribute('aria-pressed', 'false'));
+      const activeBtn = document.getElementById(`lang-${l}`);
+      if (activeBtn) activeBtn.setAttribute('aria-pressed', 'true');
+    }
+
+    // ── Nav scroll state ────────────────────────────
+    const nav = document.getElementById('nav');
+    const waFloat = document.getElementById('wa-float');
+    const heroEl = document.getElementById('hero');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+      waFloat.classList.toggle('visible', window.scrollY > heroEl.offsetHeight - 200);
+    }, { passive: true });
+
+    // ── Mobile menu ─────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    function closeMobile() {
+      hamburger.classList.remove('open');
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.classList.toggle('open');
+      mobileMenu.classList.toggle('open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('scrolled', open || window.scrollY > 60);
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMobile));
+
+    // ── Fade-in on scroll ───────────────────────────
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    // ── Before / after slider ───────────────────────
+    const baSlider = document.getElementById('ba-slider');
+    const baRange = document.getElementById('ba-range');
+    if (baSlider && baRange) {
+      const setBaPos = (val) => baSlider.style.setProperty('--ba-pos', val);
+      baRange.addEventListener('input', () => setBaPos(baRange.value));
+      setBaPos(baRange.value);
+    }
+
+    // ── Gallery filters ──────────────────────────────
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+    function applyFilter(filter) {
+      galleryItems.forEach(item => {
+        const match = filter === 'all' || item.dataset.category === filter;
+        item.classList.toggle('filtered-out', !match);
+      });
+    }
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => p.classList.remove('active'));
+        pill.classList.add('active');
+        applyFilter(pill.dataset.filter);
+      });
+    });
+
+    // ── Gallery lightbox ─────────────────────────────
+    const lightbox = document.getElementById('lightbox');
+    const lightboxPhoto = document.getElementById('lightbox-photo');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    let lightboxIndex = 0;
+    function visibleGalleryItems() {
+      return galleryItems.filter(item => !item.classList.contains('filtered-out'));
+    }
+    function renderLightbox() {
+      const items = visibleGalleryItems();
+      const item = items[lightboxIndex];
+      if (!item) return;
+      const frame = item.querySelector('.photo-frame');
+      lightboxPhoto.setAttribute('data-label', frame.getAttribute('data-label'));
+      const img = frame.querySelector('img');
+      lightboxPhoto.innerHTML = img ? `<img src="${img.src}" alt="${img.alt}">` : '';
+      const capEl = item.querySelector('.gallery-cap');
+      lightboxCaption.textContent = capEl ? capEl.textContent : '';
+    }
+    function openLightbox(item) {
+      const items = visibleGalleryItems();
+      lightboxIndex = items.indexOf(item);
+      if (lightboxIndex < 0) lightboxIndex = 0;
+      renderLightbox();
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+    function stepLightbox(delta) {
+      const items = visibleGalleryItems();
+      if (!items.length) return;
+      lightboxIndex = (lightboxIndex + delta + items.length) % items.length;
+      renderLightbox();
+    }
+    document.querySelectorAll('.gallery-link').forEach(link => {
+      link.addEventListener('click', () => openLightbox(link.closest('.gallery-item')));
+    });
+    document.getElementById('lightbox-close').addEventListener('click', closeLightbox);
+    document.getElementById('lightbox-prev').addEventListener('click', () => stepLightbox(-1));
+    document.getElementById('lightbox-next').addEventListener('click', () => stepLightbox(1));
+    lightbox.addEventListener('click', e => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', e => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') stepLightbox(-1);
+      if (e.key === 'ArrowRight') stepLightbox(1);
+    });
+
+    // ── Modals ──────────────────────────────────────
+    function openModal(id) { document.getElementById(id).classList.add('open'); }
+    function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+    document.getElementById('privacy-link').addEventListener('click', e => { e.preventDefault(); openModal('privacy-modal'); });
+    document.getElementById('terms-link').addEventListener('click', e => { e.preventDefault(); openModal('terms-modal'); });
+    document.querySelectorAll('.modal-backdrop').forEach(backdrop => {
+      backdrop.addEventListener('click', e => { if (e.target === backdrop) backdrop.classList.remove('open'); });
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') document.querySelectorAll('.modal-backdrop.open').forEach(m => m.classList.remove('open'));
+    });
+
+    // ── Cookie banner ───────────────────────────────
+    const cookieBanner = document.getElementById('cookie-banner');
+    if (localStorage.getItem('yela-cookie-ok')) {
+      cookieBanner.classList.add('hidden');
+    }
+    document.getElementById('cookie-accept').addEventListener('click', () => {
+      localStorage.setItem('yela-cookie-ok', '1');
+      cookieBanner.classList.add('hidden');
+    });
+
+    // ── WhatsApp quote form ─────────────────────────
+    document.getElementById('contact-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const name    = e.target.querySelector('#name').value.trim();
+      const phone   = e.target.querySelector('#phone').value.trim();
+      const service = e.target.querySelector('#service').value;
+      const message = e.target.querySelector('#message').value.trim();
+      if (!name || !phone || !service) {
+        alert(i18n[lang]['form.err']);
+        return;
+      }
+      const lines = lang === 'es'
+        ? [`Hola Yela Pérgolas, soy ${name}.`, `Teléfono: ${phone}`, `Servicio: ${service}`, message ? `Detalles: ${message}` : '']
+        : [`Hi Yela Pérgolas, I'm ${name}.`, `Phone: ${phone}`, `Service: ${service}`, message ? `Details: ${message}` : ''];
+      const text = encodeURIComponent(lines.filter(Boolean).join('\n'));
+      window.open(`https://wa.me/17867902569?text=${text}`, '_blank', 'noopener,noreferrer');
+      e.target.reset();
+    });
+
+    // ── Hero video autoplay fallback ────────────────
+    const heroVideo = document.getElementById('hero-video');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (heroVideo) {
+      if (prefersReducedMotion) {
+        heroVideo.addEventListener('loadeddata', () => heroVideo.pause(), { once: true });
+      } else {
+        heroVideo.play().catch(() => {
+          heroVideo.style.display = 'none';
+        });
+      }
+    }
+
+    // ── Init ────────────────────────────────────────
+    setLang('es');
+  </script>
+</body>
+</html>
