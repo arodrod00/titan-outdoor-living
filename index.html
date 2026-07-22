@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Titan Outdoor Living | Pérgolas y Estructuras de Aluminio — South Florida</title>
-  <meta name="description" content="Pérgolas, terrazas insuladas y estructuras de aluminio a la medida en el sur de la Florida. Escríbenos por WhatsApp para tu cotización gratis.">
+  <title>Betancourt Building Miami | Pérgolas y Cocinas Exteriores — Miami</title>
+  <meta name="description" content="Pérgolas de aluminio, cocinas exteriores, cercas, decks y driveways a la medida en Miami. Financiamiento disponible. Escríbenos por WhatsApp para tu cotización gratis.">
   <!-- Open Graph -->
-  <meta property="og:title" content="Titan Outdoor Living | Pérgolas y Estructuras de Aluminio — South Florida">
-  <meta property="og:description" content="Pérgolas, terrazas insuladas y remodelaciones en estructuras de aluminio en todo el sur de la Florida. Cotización gratis por WhatsApp.">
+  <meta property="og:title" content="Betancourt Building Miami | Pérgolas y Cocinas Exteriores — Miami">
+  <meta property="og:description" content="Pérgolas, cocinas exteriores, cercas, decks y driveways en Miami. Financiamiento disponible. Cotización gratis por WhatsApp.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_US">
   <meta property="og:locale:alternate" content="en_US">
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23241A12'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='17' font-family='Georgia,serif' fill='%23E08A3E'>T</text></svg>">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23241A12'/><text x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-size='17' font-family='Georgia,serif' fill='%23E08A3E'>B</text></svg>">
   <!-- Canonical -->
-  <link rel="canonical" href="https://titanoutdoorliving.com/">
+  <link rel="canonical" href="https://betancourtbuildingmiami.com/">
   <!-- CSP -->
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; img-src 'self' data: https:; media-src 'self';">
   <!-- Google Fonts: Fraunces + Inter -->
@@ -186,17 +186,18 @@
     }
     .nav-logo {
       font-family: var(--font-display);
-      font-size: var(--text-xl);
+      font-size: clamp(1rem, 1.6vw, var(--text-xl));
       font-weight: 500;
       color: var(--white);
       letter-spacing: 0.01em;
       transition: color var(--transition);
       line-height: 1.2;
+      white-space: nowrap;
     }
-    .nav-logo span { display: block; font-size: var(--text-xs); font-family: var(--font-body); font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.72; color: var(--amber); }
+    .nav-logo span { display: block; font-size: 0.68rem; font-family: var(--font-body); font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.72; color: var(--amber); white-space: nowrap; }
     #nav.scrolled .nav-logo { color: var(--ink); }
-    .nav-right { display: flex; align-items: center; gap: 2rem; }
-    .nav-links { display: flex; gap: 1.75rem; list-style: none; }
+    .nav-right { display: flex; align-items: center; gap: 1.5rem; }
+    .nav-links { display: flex; gap: 1.4rem; list-style: none; }
     .nav-links a {
       font-size: var(--text-sm);
       font-weight: 500;
@@ -562,7 +563,7 @@
     #about { background: var(--white); }
     .about-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       gap: 4.5rem;
       align-items: center;
     }
@@ -586,7 +587,7 @@
     .about-list li { display: flex; gap: 0.85rem; align-items: flex-start; color: var(--ink-700); }
     .about-list svg { flex-shrink: 0; width: 22px; height: 22px; color: var(--amber-deep); margin-top: 0.1rem; }
     @media (max-width: 860px) {
-      .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+      .about-grid { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
       .about-badge { right: 1rem; }
     }
 
@@ -600,7 +601,7 @@
     .services-header .section-desc { margin: 0 auto; }
     .services-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
       gap: 1.5rem;
     }
     .service-card {
@@ -947,9 +948,10 @@
     #contact { background: var(--white); }
     .contact-grid {
       display: grid;
-      grid-template-columns: 1.05fr 1fr;
+      grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
       gap: 4rem;
     }
+    .contact-grid > * { min-width: 0; }
     .contact-info { margin-top: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
     .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
     .contact-icon {
@@ -977,7 +979,7 @@
     .whatsapp-card h3 { font-family: var(--font-display); font-size: var(--text-2xl); font-weight: 500; }
     .whatsapp-card p { color: rgba(255,255,255,0.72); line-height: 1.7; }
     .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 1rem; }
     label { font-size: var(--text-xs); font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase; color: rgba(255,255,255,0.65); }
     input, select, textarea {
       font-family: var(--font-body);
@@ -1012,8 +1014,8 @@
     .form-submit:hover { filter: brightness(1.08); transform: translateY(-2px); box-shadow: var(--shadow); }
     .form-note { font-size: var(--text-xs); color: rgba(255,255,255,0.5); text-align: center; }
     @media (max-width: 860px) {
-      .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
-      .form-row { grid-template-columns: 1fr; }
+      .contact-grid { grid-template-columns: minmax(0, 1fr); gap: 3rem; }
+      .form-row { grid-template-columns: minmax(0, 1fr); }
     }
 
     /* ═══════════════════════════════════════════════
@@ -1022,7 +1024,7 @@
     #footer { background: var(--ink); color: rgba(255,255,255,0.7); padding: 4.5rem 0 2rem; }
     .footer-main {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr);
       gap: 3rem;
       padding-bottom: 3rem;
       border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -1037,7 +1039,7 @@
     .footer-bottom { padding-top: 1.75rem; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-size: var(--text-xs); }
     .footer-legal-links { list-style: none; display: flex; gap: 1.5rem; }
     .footer-legal-links a:hover { color: var(--amber); }
-    @media (max-width: 760px) { .footer-main { grid-template-columns: 1fr; gap: 2.5rem; } }
+    @media (max-width: 760px) { .footer-main { grid-template-columns: minmax(0, 1fr); gap: 2.5rem; } }
 
     /* ═══════════════════════════════════════════════
        MODALS
@@ -1078,7 +1080,7 @@
     /* ═══════════════════════════════════════════════
        RESPONSIVE — NAV
     ═══════════════════════════════════════════════ */
-    @media (max-width: 900px) {
+    @media (max-width: 1040px) {
       .nav-links, .nav-cta { display: none; }
       .hamburger { display: flex; }
       .nav-right .lang-toggle:not(.mobile-only) { display: none; }
@@ -1086,7 +1088,7 @@
     @media (max-width: 480px) {
       .nav-logo { font-size: var(--text-lg); }
     }
-    @media (min-width: 901px) { .mobile-lang { display: none; } }
+    @media (min-width: 1041px) { .mobile-lang { display: none; } }
 
     @media (max-width: 860px) {
       .about-grid, .contact-grid { gap: 2.5rem; }
@@ -1096,14 +1098,14 @@
 <body>
 
   <!-- WHATSAPP FLOAT -->
-  <a id="wa-float" href="https://wa.me/13057132450?text=Hola%20Titan%20Outdoor%20Living%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
+  <a id="wa-float" href="https://wa.me/17868218275?text=Hola%20Betancourt%20Building%20Miami%2C%20quiero%20una%20cotizaci%C3%B3n" target="_blank" rel="noopener noreferrer" aria-label="Escríbenos por WhatsApp">
     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.52 0-10 4.48-10 10 0 1.77.46 3.45 1.27 4.9L2 22l5.25-1.38a9.94 9.94 0 0 0 4.79 1.22h.01c5.52 0 10-4.48 10-10s-4.48-9.84-10.02-9.84zm5.87 14.2c-.25.7-1.45 1.34-2 1.42-.51.08-1.15.11-1.86-.12-.43-.13-.98-.31-1.68-.61-2.96-1.28-4.89-4.26-5.04-4.46-.15-.2-1.21-1.61-1.21-3.07s.77-2.18 1.04-2.48c.27-.3.6-.37.8-.37h.57c.18 0 .43-.03.66.5.25.6.85 2.06.92 2.21.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.18-.31.4-.45.53-.15.15-.3.31-.13.6.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.47.13.65-.07.18-.2.75-.87.95-1.17.2-.3.4-.25.67-.15.27.1 1.73.82 2.03.97.3.15.5.22.57.35.08.13.08.75-.16 1.45z"/></svg>
     <span data-i18n="wa.float">Escríbenos por WhatsApp</span>
   </a>
 
   <!-- NAVIGATION -->
   <nav id="nav">
-    <a href="#hero" class="nav-logo">Titan <em style="font-style:normal;color:var(--amber);">Outdoor Living</em><span data-i18n="nav.tag">Aluminio &amp; Diseño Exterior</span></a>
+    <a href="#hero" class="nav-logo">Betancourt <em style="font-style:normal;color:var(--amber);">Building Miami</em><span data-i18n="nav.tag">Pérgolas &amp; Cocinas Exteriores</span></a>
     <div class="nav-right">
       <ul class="nav-links">
         <li><a href="#servicios" data-i18n="nav.services">Servicios</a></li>
@@ -1154,18 +1156,18 @@
     <div class="hero-slats" aria-hidden="true"></div>
     <div class="hero-overlay" aria-hidden="true"></div>
     <div class="hero-content">
-      <p class="hero-eyebrow" data-i18n="hero.eyebrow">South Florida · Pérgolas y Estructuras de Aluminio</p>
-      <h1 class="hero-title" data-i18n-html="hero.title">Terrazas y <em>pérgolas de aluminio</em> hechas para durar</h1>
-      <p class="hero-subtitle" data-i18n="hero.subtitle">Construimos y remodelamos terrazas insuladas y estructuras de aluminio a la medida — sombra, estilo y calidad que no se oxida, año tras año.</p>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Miami · Pérgolas y Cocinas Exteriores</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">Pérgolas y <em>cocinas exteriores</em> hechas para durar</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Construimos pérgolas de aluminio, cocinas exteriores, cercas, decks y driveways a la medida — con financiamiento disponible y pagos con tarjeta.</p>
       <div class="hero-ctas">
-        <a href="https://wa.me/13057132450?text=Hola%20Titan%20Outdoor%20Living%2C%20quiero%20una%20cotizaci%C3%B3n%20gratis" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="hero.cta1">Cotización por WhatsApp</a>
+        <a href="https://wa.me/17868218275?text=Hola%20Betancourt%20Building%20Miami%2C%20quiero%20una%20cotizaci%C3%B3n%20gratis" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="hero.cta1">Cotización por WhatsApp</a>
         <a href="#galeria" class="btn-secondary" data-i18n="hero.cta2">Ver Proyectos</a>
       </div>
     </div>
     <div class="hero-stats">
       <div class="hero-stat"><strong>100%</strong><span data-i18n="hero.s1">Aluminio premium</span></div>
-      <div class="hero-stat"><strong>3+</strong><span data-i18n="hero.s2">Estilos de pérgola</span></div>
-      <div class="hero-stat"><strong data-i18n="hero.s3v">South Florida</strong><span data-i18n="hero.s3">Área de servicio</span></div>
+      <div class="hero-stat"><strong>5</strong><span data-i18n="hero.s2">Servicios especializados</span></div>
+      <div class="hero-stat"><strong data-i18n="hero.s3v">Miami</strong><span data-i18n="hero.s3">Área de servicio</span></div>
       <div class="hero-stat"><strong data-i18n="hero.s4v">24h</strong><span data-i18n="hero.s4">Respuesta por WhatsApp</span></div>
     </div>
   </section>
@@ -1174,8 +1176,8 @@
   <section id="nosotros" class="section-pad-lg">
     <div class="container about-grid">
       <div class="about-photo-wrap">
-        <div class="photo-frame about-photo" data-label="Titan Outdoor Living — proyecto terminado / images/gallery-project.jpg">
-          <img src="images/gallery-project.jpg" alt="Pérgola y estructura de aluminio terminada por Titan Outdoor Living" onerror="this.remove()">
+        <div class="photo-frame about-photo" data-label="Betancourt Building Miami — proyecto terminado / images/gallery-project.jpg">
+          <img src="images/gallery-project.jpg" alt="Pérgola y estructura de aluminio terminada por Betancourt Building Miami" onerror="this.remove()">
         </div>
         <div class="about-badge fade-in">
           <strong>100%</strong>
@@ -1184,8 +1186,8 @@
       </div>
       <div>
         <p class="section-label fade-in" data-i18n="about.label">Quiénes Somos</p>
-        <h2 class="section-title fade-in fd1" data-i18n="about.title">Pérgolas y estructuras de aluminio, hechas a tu medida</h2>
-        <p class="section-desc fade-in fd2" data-i18n="about.desc">Titan Outdoor Living es liderada por Marco Paulin, construyendo pérgolas y estructuras de aluminio en todo el sur de la Florida. Trabajamos directo contigo en cada proyecto, desde el diseño hasta la instalación final.</p>
+        <h2 class="section-title fade-in fd1" data-i18n="about.title">Pérgolas y cocinas exteriores, hechas a tu medida</h2>
+        <p class="section-desc fade-in fd2" data-i18n="about.desc">Betancourt Building Miami construye pérgolas de aluminio, cocinas exteriores, cercas, decks y driveways en Miami. Trabajamos directo contigo en cada proyecto, desde el diseño hasta la instalación final.</p>
         <ul class="about-list fade-in fd3">
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
@@ -1193,7 +1195,7 @@
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
-            <span data-i18n="about.li2">Diseño a la medida: terrazas insuladas, pérgolas y remodelaciones completas.</span>
+            <span data-i18n="about.li2">Diseño a la medida: pérgolas, cocinas exteriores, cercas, decks y driveways.</span>
           </li>
           <li>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
@@ -1209,8 +1211,8 @@
     <div class="container">
       <div class="services-header">
         <p class="section-label fade-in" data-i18n="services.label">Nuestros Servicios</p>
-        <h2 class="section-title fade-in fd1" data-i18n="services.title">Estructuras de aluminio para cada patio</h2>
-        <p class="section-desc fade-in fd2" data-i18n="services.desc">Desde una pérgola sencilla hasta la remodelación completa de tu terraza — todo en aluminio, todo a la medida.</p>
+        <h2 class="section-title fade-in fd1" data-i18n="services.title">Pérgolas, cocinas exteriores y más para tu patio</h2>
+        <p class="section-desc fade-in fd2" data-i18n="services.desc">Desde una pérgola de aluminio hasta una cocina exterior completa — todo a la medida, con financiamiento disponible.</p>
       </div>
       <div class="services-grid">
         <div class="service-card fade-in fd1">
@@ -1225,19 +1227,19 @@
         </div>
         <div class="service-card fade-in fd3">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="9"/></svg></div>
-          <h3 data-i18n="s3.title">Remodelación de Terrazas</h3>
-          <p data-i18n="s3.desc">Renovamos terrazas existentes: nueva techumbre, iluminación y acabados de lujo.</p>
+          <h3 data-i18n="s3.title">Cocinas Exteriores</h3>
+          <p data-i18n="s3.desc">Diseñamos e instalamos cocinas exteriores completas bajo pérgola — parrilla, encimera y todo lo necesario para cocinar afuera.</p>
         </div>
         <div class="service-card fade-in fd4">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9.3h18M3 14.7h18M8.3 4v16M15.7 4v16"/></svg></div>
-          <h3 data-i18n="s4.title">Mallas y Aluminio Estructural</h3>
-          <p data-i18n="s4.desc">Cerramientos y estructuras en malla de aluminio para disfrutar afuera sin insectos.</p>
+          <h3 data-i18n="s4.title">Cercas</h3>
+          <p data-i18n="s4.desc">Cercas de aluminio y otros materiales para delimitar y proteger tu propiedad con un buen acabado.</p>
         </div>
         <div class="service-card fade-in fd5">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 8.5h18M3 12h18M3 15.5h18"/></svg></div>
-          <h3 data-i18n="s5.title">Cielos de Aluminio Estilo Madera</h3>
-          <p data-i18n="s5.desc">Acabado de aluminio que imita la madera, con la durabilidad del metal y sin el mantenimiento.</p>
-          <span class="service-badge" data-i18n="s5.badge">A pedido</span>
+          <h3 data-i18n="s5.title">Decks y Driveways</h3>
+          <p data-i18n="s5.desc">Construimos decks y entradas (driveways) a la medida, con acabados duraderos para el clima de Miami.</p>
+          <span class="service-badge" data-i18n="s5.badge">Cotización gratis</span>
         </div>
         <div class="service-card fade-in fd6">
           <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
@@ -1257,7 +1259,7 @@
           <p class="section-label fade-in" data-i18n="gallery.label">Proyectos Recientes</p>
           <h2 class="section-title fade-in fd1" data-i18n="gallery.title">Nuestro Estilo</h2>
         </div>
-        <a href="https://instagram.com/titan_outdoorliving" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color:var(--ink-200);color:var(--ink);" data-i18n="gallery.cta">Ver más en Instagram</a>
+        <a href="https://www.instagram.com/betancourt_building_miami/" target="_blank" rel="noopener noreferrer" class="btn-secondary" style="border-color:var(--ink-200);color:var(--ink);" data-i18n="gallery.cta">Ver más en Instagram</a>
       </div>
 
       <div class="ba-slider fade-in" id="ba-slider">
@@ -1358,8 +1360,8 @@
   <section id="why-us" class="section-pad-lg">
     <div class="container">
       <p class="section-label fade-in" data-i18n="why.label">Por Qué Elegirnos</p>
-      <h2 class="section-title fade-in fd1" data-i18n="why.title">Aluminio que resiste el clima del sur de la Florida</h2>
-      <p class="section-desc fade-in fd2" data-i18n="why.desc">La humedad y el sol de Florida destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.</p>
+      <h2 class="section-title fade-in fd1" data-i18n="why.title">Aluminio que resiste el clima de Miami</h2>
+      <p class="section-desc fade-in fd2" data-i18n="why.desc">La humedad y el sol de Miami destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.</p>
       <div class="why-grid">
         <div class="why-item fade-in fd1">
           <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a5 5 0 0 0-5 5c0 3 2 4 2 7a3 3 0 0 0 6 0c0-3 2-4 2-7a5 5 0 0 0-5-5z"/><path d="M9 21h6"/></svg></span>
@@ -1378,8 +1380,8 @@
         </div>
         <div class="why-item fade-in fd4">
           <span class="why-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10l8-6 8 6v10"/><path d="M9 20v-6h6v6"/></svg></span>
-          <h3 data-i18n="why4.title">Múltiples estilos</h3>
-          <p data-i18n="why4.desc">Lamas abiertas, techo insulado o acabado estilo madera — el estilo que mejor combine con tu casa.</p>
+          <h3 data-i18n="why4.title">Financiamiento Disponible</h3>
+          <p data-i18n="why4.desc">Ofrecemos planes de financiamiento y aceptamos pagos con tarjeta para que tu proyecto sea más accesible.</p>
         </div>
       </div>
     </div>
@@ -1393,10 +1395,10 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1"/></svg>
         </div>
         <div>
-          <h3 data-i18n="reviews.title">Síguenos en nuestros primeros proyectos</h3>
-          <p data-i18n="reviews.desc">Estamos empezando y publicando cada proyecto nuevo en Instagram — síguenos para ver el trabajo en tiempo real.</p>
+          <h3 data-i18n="reviews.title">Más de 11 mil seguidores en Instagram</h3>
+          <p data-i18n="reviews.desc">Publicamos cada proyecto terminado en Instagram — pérgolas, cocinas exteriores y más, en tiempo real.</p>
         </div>
-        <a href="https://instagram.com/titan_outdoorliving" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="reviews.cta">Ver Instagram</a>
+        <a href="https://www.instagram.com/betancourt_building_miami/" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="reviews.cta">Ver Instagram</a>
       </div>
     </div>
   </section>
@@ -1414,14 +1416,14 @@
               <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5a2 2 0 0 1 2-2h2.5l1.5 5-2 1.5a11 11 0 0 0 5 5l1.5-2 5 1.5V19a2 2 0 0 1-2 2A16 16 0 0 1 3 5z"/></svg></div>
               <div>
                 <h4 data-i18n="ci1.label">WhatsApp / Teléfono</h4>
-                <a href="https://wa.me/13057132450" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 305-713-2450">(305) 713-2450</a>
+                <a href="https://wa.me/17868218275" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al 786-821-8275">(786) 821-8275</a>
               </div>
             </div>
             <div class="contact-item">
               <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></div>
               <div>
                 <h4 data-i18n="ci2.label">Área de Servicio</h4>
-                <p data-i18n="ci2.val">Todo el sur de la Florida</p>
+                <p data-i18n="ci2.val">Miami y áreas circundantes</p>
               </div>
             </div>
             <div class="contact-item">
@@ -1435,7 +1437,7 @@
               <div class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8.2 10.8l7.6-4.6M8.2 13.2l7.6 4.6"/></svg></div>
               <div>
                 <h4 data-i18n="ci4.label">Síguenos</h4>
-                <p><a href="https://instagram.com/titan_outdoorliving" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en pestaña nueva)">Instagram @titan_outdoorliving</a></p>
+                <p><a href="https://www.instagram.com/betancourt_building_miami/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en pestaña nueva)">Instagram @betancourt_building_miami</a></p>
               </div>
             </div>
           </div>
@@ -1458,10 +1460,10 @@
               <label for="service" data-i18n="form.service">Servicio de interés *</label>
               <select id="service" name="service" required>
                 <option value="" data-i18n="form.svc0">Selecciona un servicio...</option>
-                <option value="terraza insulada" data-i18n="form.svc1">Terraza Insulada</option>
-                <option value="pérgola" data-i18n="form.svc2">Pérgola de Aluminio</option>
-                <option value="remodelación" data-i18n="form.svc3">Remodelación de Terraza</option>
-                <option value="malla / enclosure" data-i18n="form.svc4">Malla / Enclosure</option>
+                <option value="pérgola" data-i18n="form.svc1">Pérgola de Aluminio</option>
+                <option value="cocina exterior" data-i18n="form.svc2">Cocina Exterior</option>
+                <option value="cerca" data-i18n="form.svc3">Cerca</option>
+                <option value="deck / driveway" data-i18n="form.svc4">Deck / Driveway</option>
                 <option value="otro" data-i18n="form.svc5">Otro / No estoy seguro</option>
               </select>
             </div>
@@ -1484,17 +1486,17 @@
     <div class="container">
       <div class="footer-main">
         <div>
-          <p class="footer-brand">Titan Outdoor Living</p>
-          <p class="footer-tagline" data-i18n="footer.tagline">Pérgolas y estructuras de aluminio a la medida en todo el sur de la Florida.</p>
-          <a href="https://wa.me/13057132450" target="_blank" rel="noopener noreferrer" class="footer-phone">(305) 713-2450</a>
+          <p class="footer-brand">Betancourt Building Miami</p>
+          <p class="footer-tagline" data-i18n="footer.tagline">Pérgolas, cocinas exteriores, cercas, decks y driveways a la medida en Miami.</p>
+          <a href="https://wa.me/17868218275" target="_blank" rel="noopener noreferrer" class="footer-phone">(786) 821-8275</a>
         </div>
         <div>
           <p class="footer-heading" data-i18n="footer.h1">Servicios</p>
           <ul class="footer-links" role="list">
-            <li><a href="#servicios" data-i18n="footer.s1">Terrazas Insuladas</a></li>
-            <li><a href="#servicios" data-i18n="footer.s2">Pérgolas de Aluminio</a></li>
-            <li><a href="#servicios" data-i18n="footer.s3">Remodelaciones</a></li>
-            <li><a href="#servicios" data-i18n="footer.s4">Mallas / Enclosures</a></li>
+            <li><a href="#servicios" data-i18n="footer.s1">Pérgolas de Aluminio</a></li>
+            <li><a href="#servicios" data-i18n="footer.s2">Cocinas Exteriores</a></li>
+            <li><a href="#servicios" data-i18n="footer.s3">Cercas</a></li>
+            <li><a href="#servicios" data-i18n="footer.s4">Decks / Driveways</a></li>
           </ul>
         </div>
         <div>
@@ -1503,12 +1505,12 @@
             <li><a href="#nosotros" data-i18n="footer.about">Nosotros</a></li>
             <li><a href="#galeria" data-i18n="footer.gallery">Galería</a></li>
             <li><a href="#contacto" data-i18n="footer.contact">Contacto</a></li>
-            <li><a href="https://instagram.com/titan_outdoorliving" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.instagram.com/betancourt_building_miami/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>© 2026 Titan Outdoor Living. <span data-i18n="footer.rights">Todos los derechos reservados.</span> | South Florida</p>
+        <p>© 2026 Betancourt Building Miami. <span data-i18n="footer.rights">Todos los derechos reservados.</span> | Miami</p>
         <ul class="footer-legal-links" role="list">
           <li><a href="#" id="privacy-link" data-i18n="footer.privacy">Política de Privacidad</a></li>
           <li><a href="#" id="terms-link" data-i18n="footer.terms">Términos de Servicio</a></li>
@@ -1521,7 +1523,7 @@
   <div class="modal-backdrop" id="privacy-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="privacy-title">
       <h2 id="privacy-title" data-i18n="privacy.title">Política de Privacidad</h2>
-      <p data-i18n="privacy.p1">Titan Outdoor Living respeta tu privacidad. Los datos que nos compartas por este formulario o por WhatsApp se usan únicamente para responder tu solicitud de cotización.</p>
+      <p data-i18n="privacy.p1">Betancourt Building Miami respeta tu privacidad. Los datos que nos compartas por este formulario o por WhatsApp se usan únicamente para responder tu solicitud de cotización.</p>
       <p data-i18n="privacy.p2">No vendemos ni compartimos tu información con terceros. Puedes pedirnos eliminar tus datos en cualquier momento escribiéndonos por WhatsApp.</p>
       <button class="modal-close" onclick="closeModal('privacy-modal')" data-i18n="modal.close">Cerrar</button>
     </div>
@@ -1531,7 +1533,7 @@
   <div class="modal-backdrop" id="terms-modal">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="terms-title">
       <h2 id="terms-title" data-i18n="terms.title">Términos de Servicio</h2>
-      <p data-i18n="terms.p1">Las cotizaciones ofrecidas por Titan Outdoor Living son estimados iniciales sujetos a una visita presencial y medición del espacio.</p>
+      <p data-i18n="terms.p1">Las cotizaciones ofrecidas por Betancourt Building Miami son estimados iniciales sujetos a una visita presencial y medición del espacio.</p>
       <p data-i18n="terms.p2">Los tiempos de instalación pueden variar según el alcance del proyecto y la disponibilidad de materiales.</p>
       <button class="modal-close" onclick="closeModal('terms-modal')" data-i18n="modal.close">Cerrar</button>
     </div>
@@ -1548,116 +1550,116 @@
     const i18n = {
       es: {
         'wa.float':'Escríbenos por WhatsApp',
-        'nav.tag':'Aluminio & Diseño Exterior',
+        'nav.tag':'Pérgolas & Cocinas Exteriores',
         'nav.services':'Servicios','nav.gallery':'Galería','nav.about':'Nosotros','nav.contact':'Contacto','nav.cta':'Cotización Gratis',
-        'hero.eyebrow':'South Florida · Pérgolas y Estructuras de Aluminio',
-        'hero.title':'Terrazas y <em>pérgolas de aluminio</em> hechas para durar',
-        'hero.subtitle':'Construimos y remodelamos terrazas insuladas y estructuras de aluminio a la medida — sombra, estilo y calidad que no se oxida, año tras año.',
+        'hero.eyebrow':'Miami · Pérgolas y Cocinas Exteriores',
+        'hero.title':'Pérgolas y <em>cocinas exteriores</em> hechas para durar',
+        'hero.subtitle':'Construimos pérgolas de aluminio, cocinas exteriores, cercas, decks y driveways a la medida — con financiamiento disponible y pagos con tarjeta.',
         'hero.cta1':'Cotización por WhatsApp','hero.cta2':'Ver Proyectos',
-        'hero.s1':'Aluminio premium','hero.s2':'Estilos de pérgola','hero.s3':'Área de servicio','hero.s3v':'South Florida','hero.s4':'Respuesta por WhatsApp','hero.s4v':'24h',
+        'hero.s1':'Aluminio premium','hero.s2':'Servicios especializados','hero.s3':'Área de servicio','hero.s3v':'Miami','hero.s4':'Respuesta por WhatsApp','hero.s4v':'24h',
         'about.label':'Quiénes Somos',
-        'about.title':'Pérgolas y estructuras de aluminio, hechas a tu medida',
-        'about.desc':'Titan Outdoor Living es liderada por Marco Paulin, construyendo pérgolas y estructuras de aluminio en todo el sur de la Florida. Trabajamos directo contigo en cada proyecto, desde el diseño hasta la instalación final.',
+        'about.title':'Pérgolas y cocinas exteriores, hechas a tu medida',
+        'about.desc':'Betancourt Building Miami construye pérgolas de aluminio, cocinas exteriores, cercas, decks y driveways en Miami. Trabajamos directo contigo en cada proyecto, desde el diseño hasta la instalación final.',
         'about.li1':'Aluminio de calidad — no se oxida ni se pudre con el clima de Florida.',
-        'about.li2':'Diseño a la medida: terrazas insuladas, pérgolas y remodelaciones completas.',
+        'about.li2':'Diseño a la medida: pérgolas, cocinas exteriores, cercas, decks y driveways.',
         'about.li3':'Comunicación directa por WhatsApp, del primer mensaje a la entrega final.',
         'about.badge':'Aluminio',
-        'services.label':'Nuestros Servicios','services.title':'Estructuras de aluminio para cada patio',
-        'services.desc':'Desde una pérgola sencilla hasta la remodelación completa de tu terraza — todo en aluminio, todo a la medida.',
-        's1.title':'Terrazas Insuladas','s1.desc':'Techos aislados que bloquean el calor y la lluvia, para disfrutar tu patio los 365 días del año.',
+        'services.label':'Nuestros Servicios','services.title':'Pérgolas, cocinas exteriores y más para tu patio',
+        'services.desc':'Desde una pérgola de aluminio hasta una cocina exterior completa — todo a la medida, con financiamiento disponible.',
+        's1.title':'Pérgolas con Techo Insulado','s1.desc':'Techos aislados que bloquean el calor y la lluvia, para disfrutar tu patio los 365 días del año.',
         's2.title':'Pérgolas de Aluminio','s2.desc':'Estructuras abiertas o de lamas ajustables que le dan sombra y carácter a cualquier exterior.',
-        's3.title':'Remodelación de Terrazas','s3.desc':'Renovamos terrazas existentes: nueva techumbre, iluminación y acabados de lujo.',
-        's4.title':'Mallas y Aluminio Estructural','s4.desc':'Cerramientos y estructuras en malla de aluminio para disfrutar afuera sin insectos.',
-        's5.title':'Cielos de Aluminio Estilo Madera','s5.desc':'Acabado de aluminio que imita la madera, con la durabilidad del metal y sin el mantenimiento.','s5.badge':'A pedido',
-        's6.title':'Antes y Después','s6.desc':'Descubre los distintos estilos de pérgola y terraza que construimos en el sur de la Florida.','s6.badge':'Ver galería →',
+        's3.title':'Cocinas Exteriores','s3.desc':'Diseñamos e instalamos cocinas exteriores completas bajo pérgola — parrilla, encimera y todo lo necesario para cocinar afuera.',
+        's4.title':'Cercas','s4.desc':'Cercas de aluminio y otros materiales para delimitar y proteger tu propiedad con un buen acabado.',
+        's5.title':'Decks y Driveways','s5.desc':'Construimos decks y entradas (driveways) a la medida, con acabados duraderos para el clima de Miami.','s5.badge':'Cotización gratis',
+        's6.title':'Antes y Después','s6.desc':'Descubre los distintos estilos de pérgola y terraza que construimos en Miami.','s6.badge':'Ver galería →',
         'gallery.label':'Proyectos Recientes','gallery.title':'Nuestro Estilo','gallery.cta':'Ver más en Instagram',
         'ba.before':'Pérgola Abierta','ba.after':'Terraza Insulada',
         'ba.note':'Dos estilos, un mismo nivel de acabado: lamas abiertas para sombra y ventilación, o techo insulado para sol y lluvia todo el año.',
         'filter.all':'Todos','filter.pergolas':'Pérgolas','filter.terrazas':'Terrazas Insuladas','filter.detalles':'Detalles','filter.cocinas':'Cocinas Exteriores',
         'g1':'Terraza insulada','g2':'Pérgola de aluminio con área de descanso','g3':'Pérgola con lounge exterior',
         'g4':'Antes / Después de remodelación','g5':'Estructura de aluminio a la medida','g6':'Terraza insulada · iluminación nocturna','g6b':'Cocina exterior bajo pérgola',
-        'why.label':'Por Qué Elegirnos','why.title':'Aluminio que resiste el clima del sur de la Florida',
-        'why.desc':'La humedad y el sol de Florida destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.',
-        'why1.title':'No se oxida','why1.desc':'El aluminio no se corroe con la humedad ni la sal del aire costero de la Florida.',
-        'why2.title':'Diseño a la medida','why2.desc':'Cada terraza y pérgola se diseña según el espacio, el estilo de tu casa y tu presupuesto.',
+        'why.label':'Por Qué Elegirnos','why.title':'Aluminio que resiste el clima de Miami',
+        'why.desc':'La humedad y el sol de Miami destruyen la madera y oxidan el hierro. Nuestras estructuras están pensadas para durar sin ese problema.',
+        'why1.title':'No se oxida','why1.desc':'El aluminio no se corroe con la humedad ni la sal del aire costero de Miami.',
+        'why2.title':'Diseño a la medida','why2.desc':'Cada proyecto se diseña según el espacio, el estilo de tu casa y tu presupuesto.',
         'why3.title':'Trato directo','why3.desc':'Hablas directo con el equipo por WhatsApp — sin intermediarios, sin sorpresas.',
-        'why4.title':'Múltiples estilos','why4.desc':'Lamas abiertas, techo insulado o acabado estilo madera — el estilo que mejor combine con tu casa.',
-        'reviews.title':'Síguenos en nuestros primeros proyectos','reviews.desc':'Estamos empezando y publicando cada proyecto nuevo en Instagram — síguenos para ver el trabajo en tiempo real.','reviews.cta':'Ver Instagram',
+        'why4.title':'Financiamiento Disponible','why4.desc':'Ofrecemos planes de financiamiento y aceptamos pagos con tarjeta para que tu proyecto sea más accesible.',
+        'reviews.title':'Más de 11 mil seguidores en Instagram','reviews.desc':'Publicamos cada proyecto terminado en Instagram — pérgolas, cocinas exteriores y más, en tiempo real.','reviews.cta':'Ver Instagram',
         'contact.label':'Hablemos','contact.title':'Pide tu cotización gratis','contact.desc':'Cuéntanos sobre tu proyecto por WhatsApp y coordinamos una visita gratis a tu casa.',
-        'ci1.label':'WhatsApp / Teléfono','ci2.label':'Área de Servicio','ci2.val':'Todo el sur de la Florida',
+        'ci1.label':'WhatsApp / Teléfono','ci2.label':'Área de Servicio','ci2.val':'Miami y áreas circundantes',
         'ci3.label':'Horario','ci3.val':'Lunes – Sábado: 8:00 AM – 6:00 PM','ci4.label':'Síguenos',
         'form.heading':'Cuéntanos de tu proyecto','form.subheading':'Completa estos datos y te abrimos WhatsApp con tu mensaje ya escrito, listo para enviar.',
         'form.name':'Nombre *','form.phone':'Teléfono *','form.service':'Servicio de interés *',
-        'form.svc0':'Selecciona un servicio...','form.svc1':'Terraza Insulada','form.svc2':'Pérgola de Aluminio','form.svc3':'Remodelación de Terraza','form.svc4':'Malla / Enclosure','form.svc5':'Otro / No estoy seguro',
+        'form.svc0':'Selecciona un servicio...','form.svc1':'Pérgola de Aluminio','form.svc2':'Cocina Exterior','form.svc3':'Cerca','form.svc4':'Deck / Driveway','form.svc5':'Otro / No estoy seguro',
         'form.msg':'Cuéntanos sobre tu espacio','form.submit':'Enviar por WhatsApp','form.note':'Se abre WhatsApp con tu mensaje listo — tú decides si enviarlo.',
         'form.err':'Por favor completa nombre, teléfono y servicio.',
-        'footer.tagline':'Pérgolas y estructuras de aluminio a la medida en todo el sur de la Florida.',
-        'footer.h1':'Servicios','footer.s1':'Terrazas Insuladas','footer.s2':'Pérgolas de Aluminio','footer.s3':'Remodelaciones','footer.s4':'Mallas / Enclosures',
+        'footer.tagline':'Pérgolas, cocinas exteriores, cercas, decks y driveways a la medida en Miami.',
+        'footer.h1':'Servicios','footer.s1':'Pérgolas de Aluminio','footer.s2':'Cocinas Exteriores','footer.s3':'Cercas','footer.s4':'Decks / Driveways',
         'footer.h2':'Empresa','footer.about':'Nosotros','footer.gallery':'Galería','footer.contact':'Contacto','footer.rights':'Todos los derechos reservados.',
         'footer.privacy':'Política de Privacidad','footer.terms':'Términos de Servicio',
         'privacy.title':'Política de Privacidad',
-        'privacy.p1':'Titan Outdoor Living respeta tu privacidad. Los datos que nos compartas por este formulario o por WhatsApp se usan únicamente para responder tu solicitud de cotización.',
+        'privacy.p1':'Betancourt Building Miami respeta tu privacidad. Los datos que nos compartas por este formulario o por WhatsApp se usan únicamente para responder tu solicitud de cotización.',
         'privacy.p2':'No vendemos ni compartimos tu información con terceros. Puedes pedirnos eliminar tus datos en cualquier momento escribiéndonos por WhatsApp.',
         'terms.title':'Términos de Servicio',
-        'terms.p1':'Las cotizaciones ofrecidas por Titan Outdoor Living son estimados iniciales sujetos a una visita presencial y medición del espacio.',
+        'terms.p1':'Las cotizaciones ofrecidas por Betancourt Building Miami son estimados iniciales sujetos a una visita presencial y medición del espacio.',
         'terms.p2':'Los tiempos de instalación pueden variar según el alcance del proyecto y la disponibilidad de materiales.',
         'modal.close':'Cerrar',
         'cookie.text':'Usamos cookies básicas para mejorar tu experiencia en este sitio.','cookie.accept':'Aceptar'
       },
       en: {
         'wa.float':'Message us on WhatsApp',
-        'nav.tag':'Aluminum & Outdoor Design',
+        'nav.tag':'Pergolas & Outdoor Kitchens',
         'nav.services':'Services','nav.gallery':'Gallery','nav.about':'About','nav.contact':'Contact','nav.cta':'Free Quote',
-        'hero.eyebrow':'South Florida · Pergolas & Aluminum Structures',
-        'hero.title':'Aluminum patios and <em>pergolas</em> built to last',
-        'hero.subtitle':'We build and remodel insulated patios and custom aluminum structures — shade, style, and quality that never rusts, year after year.',
+        'hero.eyebrow':'Miami · Pergolas & Outdoor Kitchens',
+        'hero.title':'Pergolas and <em>outdoor kitchens</em> built to last',
+        'hero.subtitle':'We build custom aluminum pergolas, outdoor kitchens, fences, decks, and driveways — with financing available and card payments accepted.',
         'hero.cta1':'Quote via WhatsApp','hero.cta2':'See Our Work',
-        'hero.s1':'Premium aluminum','hero.s2':'Pergola styles','hero.s3':'Service area','hero.s3v':'South Florida','hero.s4':'WhatsApp response','hero.s4v':'24h',
+        'hero.s1':'Premium aluminum','hero.s2':'Specialized services','hero.s3':'Service area','hero.s3v':'Miami','hero.s4':'WhatsApp response','hero.s4v':'24h',
         'about.label':'Who We Are',
-        'about.title':'Pergolas and aluminum structures, built to your space',
-        'about.desc':'Titan Outdoor Living is led by Marco Paulin, building pergolas and aluminum structures across South Florida. We work directly with you on every project, from design through final installation.',
+        'about.title':'Pergolas and outdoor kitchens, built to your space',
+        'about.desc':'Betancourt Building Miami builds aluminum pergolas, outdoor kitchens, fences, decks, and driveways across Miami. We work directly with you on every project, from design through final installation.',
         'about.li1':"Quality aluminum — it won't rust or rot in Florida's climate.",
-        'about.li2':'Custom design: insulated patios, pergolas, and full remodels.',
+        'about.li2':'Custom design: pergolas, outdoor kitchens, fences, decks, and driveways.',
         'about.li3':'Direct WhatsApp communication, from the first message to final delivery.',
         'about.badge':'Aluminum',
-        'services.label':'Our Services','services.title':'Aluminum structures for every patio',
-        'services.desc':'From a simple pergola to a full patio remodel — all in aluminum, all built to your space.',
-        's1.title':'Insulated Patios','s1.desc':'Insulated roofing that blocks heat and rain, so you can enjoy your patio 365 days a year.',
+        'services.label':'Our Services','services.title':'Pergolas, outdoor kitchens, and more for your patio',
+        'services.desc':'From an aluminum pergola to a full outdoor kitchen — all built to your space, with financing available.',
+        's1.title':'Insulated Pergola Roofs','s1.desc':'Insulated roofing that blocks heat and rain, so you can enjoy your patio 365 days a year.',
         's2.title':'Aluminum Pergolas','s2.desc':'Open or adjustable-louver structures that bring shade and character to any outdoor space.',
-        's3.title':'Patio Remodels','s3.desc':'We renovate existing patios: new roofing, lighting, and luxury finishes.',
-        's4.title':'Screen Enclosures & Structures','s4.desc':'Aluminum screen enclosures so you can enjoy the outdoors, bug-free.',
-        's5.title':'Wood-Look Aluminum Ceilings','s5.desc':'Aluminum finished to look like wood — the durability of metal, without the upkeep.','s5.badge':'By request',
-        's6.title':'Before & After','s6.desc':'See the different pergola and patio styles we build across South Florida.','s6.badge':'See gallery →',
+        's3.title':'Outdoor Kitchens','s3.desc':'We design and install complete outdoor kitchens under a pergola — grill, countertop, and everything you need to cook outside.',
+        's4.title':'Fences','s4.desc':'Aluminum and other-material fences to mark and protect your property with a clean finish.',
+        's5.title':'Decks & Driveways','s5.desc':'We build custom decks and driveways with finishes built to last in Miami\'s climate.','s5.badge':'Free quote',
+        's6.title':'Before & After','s6.desc':'See the different pergola and patio styles we build across Miami.','s6.badge':'See gallery →',
         'gallery.label':'Recent Projects','gallery.title':'Our Style','gallery.cta':'See more on Instagram',
         'ba.before':'Open Pergola','ba.after':'Insulated Patio',
         'ba.note':'Two styles, the same level of craftsmanship: open louvers for shade and airflow, or an insulated roof for sun and rain, year-round.',
         'filter.all':'All','filter.pergolas':'Pergolas','filter.terrazas':'Insulated Patios','filter.detalles':'Details','filter.cocinas':'Outdoor Kitchens',
         'g1':'Insulated patio','g2':'Aluminum pergola with lounge area','g3':'Pergola with outdoor lounge',
         'g4':'Remodel before / after','g5':'Custom aluminum structure','g6':'Insulated patio · night lighting','g6b':'Outdoor kitchen under a pergola',
-        'why.label':'Why Choose Us','why.title':'Aluminum built for South Florida weather',
-        'why.desc':"Florida's humidity and sun destroy wood and rust iron. Our structures are built to last without that problem.",
-        'why1.title':"Won't rust",'why1.desc':"Aluminum doesn't corrode from South Florida's humidity or coastal salt air.",
-        'why2.title':'Custom design','why2.desc':'Every patio and pergola is designed around your space, your home style, and your budget.',
+        'why.label':'Why Choose Us','why.title':'Aluminum built for Miami weather',
+        'why.desc':"Miami's humidity and sun destroy wood and rust iron. Our structures are built to last without that problem.",
+        'why1.title':"Won't rust",'why1.desc':"Aluminum doesn't corrode from Miami's humidity or coastal salt air.",
+        'why2.title':'Custom design','why2.desc':'Every project is designed around your space, your home style, and your budget.',
         'why3.title':'Direct communication','why3.desc':'You talk straight to the team over WhatsApp — no middlemen, no surprises.',
-        'why4.title':'Multiple styles','why4.desc':'Open louvers, an insulated roof, or a wood-look finish — whichever fits your home best.',
-        'reviews.title':'Follow our first projects','reviews.desc':"We're just getting started, posting every new project on Instagram — follow along to see the work in real time.",'reviews.cta':'See Instagram',
+        'why4.title':'Financing Available','why4.desc':'We offer financing plans and accept card payments to make your project more accessible.',
+        'reviews.title':'Over 11,000 followers on Instagram','reviews.desc':"We post every finished project on Instagram — pergolas, outdoor kitchens, and more, in real time.",'reviews.cta':'See Instagram',
         'contact.label':"Let's Talk",'contact.title':'Get your free quote','contact.desc':"Tell us about your project on WhatsApp and we'll schedule a free visit to your home.",
-        'ci1.label':'WhatsApp / Phone','ci2.label':'Service Area','ci2.val':'All of South Florida',
+        'ci1.label':'WhatsApp / Phone','ci2.label':'Service Area','ci2.val':'Miami and surrounding areas',
         'ci3.label':'Hours','ci3.val':'Mon – Sat: 8:00 AM – 6:00 PM','ci4.label':'Follow Us',
         'form.heading':'Tell us about your project','form.subheading':"Fill this in and we'll open WhatsApp with your message already written, ready to send.",
         'form.name':'Full Name *','form.phone':'Phone *','form.service':'Service Interested In *',
-        'form.svc0':'Select a service...','form.svc1':'Insulated Patio','form.svc2':'Aluminum Pergola','form.svc3':'Patio Remodel','form.svc4':'Screen Enclosure','form.svc5':'Other / Not Sure',
+        'form.svc0':'Select a service...','form.svc1':'Aluminum Pergola','form.svc2':'Outdoor Kitchen','form.svc3':'Fence','form.svc4':'Deck / Driveway','form.svc5':'Other / Not Sure',
         'form.msg':'Tell us about your space','form.submit':'Send via WhatsApp','form.note':"This opens WhatsApp with your message ready — you decide whether to send it.",
         'form.err':'Please fill in your name, phone, and service.',
-        'footer.tagline':'Custom pergolas and aluminum structures across South Florida.',
-        'footer.h1':'Services','footer.s1':'Insulated Patios','footer.s2':'Aluminum Pergolas','footer.s3':'Remodels','footer.s4':'Screen Enclosures',
+        'footer.tagline':'Custom pergolas, outdoor kitchens, fences, decks, and driveways across Miami.',
+        'footer.h1':'Services','footer.s1':'Aluminum Pergolas','footer.s2':'Outdoor Kitchens','footer.s3':'Fences','footer.s4':'Decks / Driveways',
         'footer.h2':'Company','footer.about':'About','footer.gallery':'Gallery','footer.contact':'Contact','footer.rights':'All rights reserved.',
         'footer.privacy':'Privacy Policy','footer.terms':'Terms of Service',
         'privacy.title':'Privacy Policy',
-        'privacy.p1':'Titan Outdoor Living respects your privacy. Information shared through this form or WhatsApp is used only to respond to your quote request.',
+        'privacy.p1':'Betancourt Building Miami respects your privacy. Information shared through this form or WhatsApp is used only to respond to your quote request.',
         'privacy.p2':'We never sell or share your information with third parties. You can ask us to delete your data at any time via WhatsApp.',
         'terms.title':'Terms of Service',
-        'terms.p1':'Quotes provided by Titan Outdoor Living are initial estimates subject to an in-person visit and measurement of the space.',
+        'terms.p1':'Quotes provided by Betancourt Building Miami are initial estimates subject to an in-person visit and measurement of the space.',
         'terms.p2':'Installation timelines may vary depending on project scope and material availability.',
         'modal.close':'Close',
         'cookie.text':'We use basic cookies to improve your experience on this site.','cookie.accept':'Accept'
@@ -1810,11 +1812,11 @@
 
     // ── Cookie banner ───────────────────────────────
     const cookieBanner = document.getElementById('cookie-banner');
-    if (localStorage.getItem('titan-cookie-ok')) {
+    if (localStorage.getItem('betancourt-cookie-ok')) {
       cookieBanner.classList.add('hidden');
     }
     document.getElementById('cookie-accept').addEventListener('click', () => {
-      localStorage.setItem('titan-cookie-ok', '1');
+      localStorage.setItem('betancourt-cookie-ok', '1');
       cookieBanner.classList.add('hidden');
     });
 
@@ -1830,10 +1832,10 @@
         return;
       }
       const lines = lang === 'es'
-        ? [`Hola Titan Outdoor Living, soy ${name}.`, `Teléfono: ${phone}`, `Servicio: ${service}`, message ? `Detalles: ${message}` : '']
-        : [`Hi Titan Outdoor Living, I'm ${name}.`, `Phone: ${phone}`, `Service: ${service}`, message ? `Details: ${message}` : ''];
+        ? [`Hola Betancourt Building Miami, soy ${name}.`, `Teléfono: ${phone}`, `Servicio: ${service}`, message ? `Detalles: ${message}` : '']
+        : [`Hi Betancourt Building Miami, I'm ${name}.`, `Phone: ${phone}`, `Service: ${service}`, message ? `Details: ${message}` : ''];
       const text = encodeURIComponent(lines.filter(Boolean).join('\n'));
-      window.open(`https://wa.me/13057132450?text=${text}`, '_blank', 'noopener,noreferrer');
+      window.open(`https://wa.me/17868218275?text=${text}`, '_blank', 'noopener,noreferrer');
       e.target.reset();
     });
 
