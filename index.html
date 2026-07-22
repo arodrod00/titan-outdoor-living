@@ -220,6 +220,31 @@
       transition: all var(--transition);
     }
     #nav.scrolled .lang-toggle { background: var(--ink-100); border-color: var(--ink-200); }
+
+    /* Social icons */
+    .nav-social { display: flex; align-items: center; gap: 0.5rem; }
+    .social-btn {
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      color: white;
+      transition: all var(--transition);
+    }
+    .social-btn svg { width: 16px; height: 16px; }
+    .social-btn:hover, .social-btn:focus-visible { background: var(--amber); border-color: var(--amber); color: var(--ink); transform: translateY(-2px); }
+    #nav.scrolled .social-btn { background: var(--ink-100); border-color: var(--ink-200); color: var(--ink-500); }
+    #nav.scrolled .social-btn:hover, #nav.scrolled .social-btn:focus-visible { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+    .mobile-social { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.5rem; }
+    .mobile-social .social-btn { width: 42px; height: 42px; background: var(--ink-100); border-color: var(--ink-200); color: var(--ink-500); }
+    .mobile-social .social-btn svg { width: 19px; height: 19px; }
+    .mobile-social .social-btn:hover { background: var(--amber); border-color: var(--amber); color: var(--ink); }
+
     .lang-btn {
       font-size: var(--text-xs);
       font-weight: 700;
@@ -1080,15 +1105,15 @@
     /* ═══════════════════════════════════════════════
        RESPONSIVE — NAV
     ═══════════════════════════════════════════════ */
-    @media (max-width: 1040px) {
-      .nav-links, .nav-cta { display: none; }
+    @media (max-width: 1160px) {
+      .nav-links, .nav-cta, .nav-right > .nav-social { display: none; }
       .hamburger { display: flex; }
       .nav-right .lang-toggle:not(.mobile-only) { display: none; }
     }
     @media (max-width: 480px) {
       .nav-logo { font-size: var(--text-lg); }
     }
-    @media (min-width: 1041px) { .mobile-lang { display: none; } }
+    @media (min-width: 1161px) { .mobile-lang, .mobile-social { display: none; } }
 
     @media (max-width: 860px) {
       .about-grid, .contact-grid { gap: 2.5rem; }
@@ -1113,6 +1138,17 @@
         <li><a href="#nosotros" data-i18n="nav.about">Nosotros</a></li>
         <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
       </ul>
+      <div class="nav-social" role="group" aria-label="Redes sociales">
+        <a class="social-btn" href="https://www.instagram.com/betancourt_building_miami/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en pestaña nueva)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.facebook.com/betancourtbuildingmiami/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (abre en pestaña nueva)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.2-1.5 1.6-1.5H16V4.2C15.6 4.1 14.5 4 13.2 4c-2.6 0-4.2 1.6-4.2 4.4V10.5H6.5v3H9V21h4.5z"/></svg>
+        </a>
+        <a class="social-btn" href="https://www.tiktok.com/@betancourt_buildi" target="_blank" rel="noopener noreferrer" aria-label="TikTok (abre en pestaña nueva)">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2 1.7 3.6 3.7 3.9v3a7 7 0 0 1-3.7-1.1v6.4a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.7 2.4V3h3z"/></svg>
+        </a>
+      </div>
       <div class="lang-toggle" role="group" aria-label="Selector de idioma">
         <button class="lang-btn active" id="lang-es" onclick="setLang('es')" aria-pressed="true">ES</button>
         <button class="lang-btn" id="lang-en" onclick="setLang('en')" aria-pressed="false">EN</button>
@@ -1134,6 +1170,17 @@
     <div class="mobile-lang">
       <button class="lang-btn active" onclick="setLang('es');closeMobile()">ES</button>
       <button class="lang-btn" onclick="setLang('en');closeMobile()">EN</button>
+    </div>
+    <div class="mobile-social" role="group" aria-label="Redes sociales">
+      <a class="social-btn" href="https://www.instagram.com/betancourt_building_miami/" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre en pestaña nueva)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.facebook.com/betancourtbuildingmiami/" target="_blank" rel="noopener noreferrer" aria-label="Facebook (abre en pestaña nueva)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.2-1.5 1.6-1.5H16V4.2C15.6 4.1 14.5 4 13.2 4c-2.6 0-4.2 1.6-4.2 4.4V10.5H6.5v3H9V21h4.5z"/></svg>
+      </a>
+      <a class="social-btn" href="https://www.tiktok.com/@betancourt_buildi" target="_blank" rel="noopener noreferrer" aria-label="TikTok (abre en pestaña nueva)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 3c.3 2 1.7 3.6 3.7 3.9v3a7 7 0 0 1-3.7-1.1v6.4a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.1a2.5 2.5 0 1 0 1.7 2.4V3h3z"/></svg>
+      </a>
     </div>
   </div>
 
