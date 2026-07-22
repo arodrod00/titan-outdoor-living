@@ -18,7 +18,7 @@ intactos y solo se cambió la información del negocio (mismo repo, no uno nuevo
 - **Puerto de preview:** 3462 (`titan-outdoor-living` en `.claude/launch.json` — nombre interno del launch config sin cambiar).
 - **Repo:** https://github.com/arodrod00/titan-outdoor-living (mismo historial de commits; nombre del repo sin cambiar, pendiente si se decide renombrar).
 - **Proyecto de Vercel:** renombrado de `titan-outdoor-living` → `betancourt-building-miami` (2026-07-22).
-- **Producción:** https://betancourtbuildingmiami.vercel.app (nueva URL activa desde el rename; `betancourt-building-miami.vercel.app` sin guion-completo no estaba disponible — ya en uso por otra cuenta de Vercel). El alias anterior **https://titan-outdoor-living.vercel.app** se dejó activo intencionalmente (no se eliminó) por si hay enlaces existentes apuntando ahí.
+- **Producción:** https://betancourtbuildingmiami.vercel.app (única URL activa; `betancourt-building-miami.vercel.app` con guiones no estaba disponible — ya en uso por otra cuenta de Vercel). El alias anterior **titan-outdoor-living.vercel.app** se eliminó a pedido del usuario (2026-07-22) — ahora da 404.
 - **Hero:** mismo video de fondo (`hero.mp4`) heredado de Yela/Titan — contenido
   genérico no atribuible a ninguna marca específica, se mantuvo sin cambios.
 - **Galería:** misma funcionalidad interactiva (slider antes/después, filtros por
